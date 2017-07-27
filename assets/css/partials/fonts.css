@@ -1,0 +1,49 @@
+@font-face {
+	font-family: 'soleil bold';
+	src: url(../../fonts/soleilBd.ttf);
+}
+@font-face {
+	font-family: 'soleil bold italic';
+	src: url(../../fonts/soleilBdIt.ttf);
+}
+@font-face {
+	font-family: 'soleil book';
+	src: url(../../fonts/soleilBk.ttf);
+}
+@font-face {
+	font-family: 'soleil book italic';
+	src: url(../../fonts/soleilBkIt.ttf);
+}
+@font-face {
+	font-family: 'soleil light';
+	src: url(../../fonts/soleilLt.ttf);
+}
+@font-face {
+	font-family: 'soleil light italic';
+	src: url(../../fonts/soleilLtIt.ttf);
+}
+@font-face {
+	font-family: 'soleil';
+	src: url(../../fonts/soleilRg.ttf);
+}
+@font-face {
+	font-family: 'soleil italic';
+	src: url(../../fonts/soleilRgIt.ttf);
+}
+@font-face {
+	font-family: 'soleil semibold';
+	src: url(../../fonts/soleilSb.ttf);
+}
+@font-face {
+	font-family: 'soleil semibold italic';
+	src: url(../../fonts/soleilSbIt.ttf);
+}
+@font-face {
+	font-family: 'soleil xtrabold';
+	src: url(../../fonts/soleilXb.ttf);
+}
+@font-face {
+	font-family: 'soleil xtrabold italic';
+	src: url(../../fonts/soleilXbIt.ttf);
+}
+

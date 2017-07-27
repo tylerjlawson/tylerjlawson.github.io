@@ -1,0 +1,12 @@
+@media (pointer: fine) {
+  /* line 6, ../sass/default-desktop.scss */
+  a:hover, .Header nav a:hover {
+    color: #53D8FB;
+  }
+
+  /* line 9, ../sass/default-desktop.scss */
+  .Contact .Social .fa:hover {
+    transition: all .3s ease;
+    transform: scale(1.1) translateY(-5px);
+  }
+}

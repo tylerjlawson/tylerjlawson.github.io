@@ -1,0 +1,13 @@
+
+
+
+// -------------------Hovers------------------------------
+@media (pointer: fine){
+	a:hover, .Header nav a:hover{
+		color: #53D8FB;
+	}
+	.Contact .Social .fa:hover{
+	    transition: all .3s ease;
+	    transform: scale(1.1) translateY(-5px);
+	}
+}
