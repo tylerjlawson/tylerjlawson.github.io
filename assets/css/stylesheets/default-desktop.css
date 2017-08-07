@@ -1,12 +1,46 @@
+/* line 1, ../sass/default-desktop.scss */
+.Mobile-Only {
+  display: none;
+}
+
 @media (pointer: fine) {
-  /* line 6, ../sass/default-desktop.scss */
+  /* line 9, ../sass/default-desktop.scss */
   a:hover, .Header nav a:hover {
     color: #53D8FB;
   }
 
-  /* line 9, ../sass/default-desktop.scss */
+  /* line 12, ../sass/default-desktop.scss */
   .Contact .Social .fa:hover {
     transition: all .3s ease;
     transform: scale(1.1) translateY(-5px);
+  }
+
+  /* line 16, ../sass/default-desktop.scss */
+  .modal-close:hover .fa:before {
+    color: #777;
+  }
+
+  /* line 19, ../sass/default-desktop.scss */
+  .Projects .portfolio-item .portfolio-link .caption:hover {
+    opacity: 1;
+  }
+}
+@media (min-width: 992px) {
+  /* line 25, ../sass/default-desktop.scss */
+  .col-md-6 {
+    width: 45%;
+    margin: 0 2rem 2rem 0;
+  }
+
+  /* line 30, ../sass/default-desktop.scss */
+  .modal-content {
+    margin: auto;
+    margin-top: 7%;
+  }
+}
+@media (min-width: 1177px) {
+  /* line 38, ../sass/default-desktop.scss */
+  .modal-content {
+    width: 1170px;
   }
 }

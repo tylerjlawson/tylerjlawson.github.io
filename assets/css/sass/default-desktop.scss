@@ -1,3 +1,6 @@
+.Mobile-Only{
+	display: none;
+}
 
 
 
@@ -10,4 +13,31 @@
 	    transition: all .3s ease;
 	    transform: scale(1.1) translateY(-5px);
 	}
+	.modal-close:hover .fa:before{
+		color: #777;
+	}
+	.Projects .portfolio-item .portfolio-link .caption:hover {
+	  opacity: 1;
+	}
+}
+
+@media (min-width: 992px){
+	.col-md-6 {
+		width: 45%;
+		margin: 0 2rem 2rem 0;
+
+	}
+	.modal-content{
+		margin: auto;
+	    margin-top: 7%;
+	}
+
+}
+
+@media (min-width: 1177px){
+	.modal-content{
+		width: 1170px;
+	    
+	}
+	
 }

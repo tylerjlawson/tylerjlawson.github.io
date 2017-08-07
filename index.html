@@ -1,7 +1,8 @@
 <!DOCTYPE HTML>
 <html lang="en">
 <head>
-	
+	<meta name="description" content="">
+    <meta name="author" content="">
 	<title>Tyler Lawson</title>
 
 	<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
@@ -10,7 +11,11 @@
 	<link rel="manifest" href="/favicon/manifest.json">
 	<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#374a67">
 	<meta name="theme-color" content="#ffffff">
-	
+
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+	<link href="/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
 	<link rel="stylesheet" href="/assets/css/stylesheets/default.css"/>
     <link rel="stylesheet" href="/assets/css/stylesheets/default-desktop.css" media="only screen and (min-width: 768px)"/>
     <link rel="stylesheet" href="/assets/css/stylesheets/default-mobile.css" media="only screen and (max-width: 767px)"/>
@@ -20,13 +25,28 @@
 </head>
 <body>
 	<header class="Header" id="js-header">
-		<h1 class="Logo">Tyler Lawson</h1>
-		<nav>
-			<a href="#about">About</a>
-			<a href="#projects">Projects</a>
-			<a href="#contact">Contact</a>
-		</nav>
+		<div class="Desktop-Only">
+			<h1 class="Logo">Tyler Lawson</h1>
+			<nav>
+				<a href="#about">About</a>
+				<a href="#projects">Projects</a>
+				<a href="#contact">Contact</a>
+			</nav>
+		</div>
+		<div class="Mobile-Only">
+			<h1 class="Logo">Tyler Lawson</h1>
+			<button class="hamburger">&#9776;</button>
+  			<button class="cross">&#735;</button>
+		</div>
 	</header>
+
+	<div class="menu">
+		<ul>
+	    	<a href="#about"><li>About</li></a>
+			<a href="#projects"><li>Projects</li></a>
+			<a href="#contact"><li>Contact</li></a>
+	    </ul>
+	</div>
 
 	<section class="Intro" id="intro">
 		<div class="Image-Overlay">			
@@ -63,11 +83,153 @@
 	<div class="anchor" id="projects"></div>
 	<section class="Projects">
 		<div class="Content">
-			<h2 class="Page-Subtitle">My Projects</h2>
-			<p>Hi, I will soon be adding content to this section, but in the interest of having SOMETHING on this page, I have added everything that I have prepared so far.</p>
-			<p>Eventually, this page will be a  fully responsive portfolio of all of my work with web developement. I thank you for your patience.</p>
-		</div>
-	</section>
+	        <div class="container">
+	            <div class="row">
+	                
+	                <h2 class="Page-Subtitle">My Projects</h2>
+	                
+	            </div>
+	            <div class="row">
+	                <div class="col-md-6 portfolio-item">
+	                    <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+	                        <div class="caption">
+	                            <div class="caption-content">
+	                              <h3>This Website</h3>
+	                              <p>SCSS  |  HTML  |  Bootstrap</p>
+	                            </div>
+	                        </div>
+	                        <img src="projects/images/portfolio/desktop.png" class="img-responsive" alt="Portfolio page">
+	                    </a>
+	                </div>
+	                <div class="col-md-6 portfolio-item">
+	                    <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+	                        <div class="caption">
+	                            <div class="caption-content">
+	                              <h3>VDHA</h3>
+	                              <p>CSS  |  WordPress  |  PHP</p>
+	                            </div>
+	                        </div>
+	                        <img src="projects/images/vdha/desktop.png" class="img-responsive" alt="VDHA page">
+	                    </a>
+	                </div>
+	            </div>
+	            
+	                
+	           
+	            
+	        </div>
+	    </div>
+    </section>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                        	<div class="modal-title">
+                        		<div class="Title1">
+	                            	<h2>Visiting Dental Hygiene Associates</h2>
+	                            	
+		                            <ul class="list-inline item-details"> 
+
+		                                <a class="btn btn-default" href="http://visitingdentalhygiene.com" target="_blank"><i class="fa fa-laptop"></i> Go To Site</a>
+
+
+		                          
+	                            	</ul>
+	                            </div>
+	                            <div class="Title2">
+	                            	<button type="button" class="modal-close" data-dismiss="modal"><i class="fa fa-times"></i></button>
+	                            </div>
+	                        </div>
+                            <div class="Photos">
+								<div class="Image-Desktop">
+									<img src="/projects/images/vdha/desktop.png">
+								</div>
+								<div class="Image-Tablet">
+									<img src="/projects/images/vdha/tablet.png">
+								</div>
+								<div class="Image-Mobile">
+									<img src="/projects/images/vdha/mobile.png">
+								</div>
+							</div>
+                            
+                            <p>
+                              Visiting Dental Hygiene was the first site that I made using Wordpress. While making the site I received new experience using PHP and WordPress. Visiting Dental Hygiene is a small business near my home in Massachusetts and as a small business, they did not need a very complicated website, but preferred a Wordpress site so that they would be able to use the Wordpress Content Management System(CMS).  
+                            </p>
+                            <b>
+                              CSS  |  WordPress  |  PHP  |  JavaScript
+                            </b>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal">
+                <div class="lr">
+                    <div class="rl">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="modal-body">
+                        	<div class="modal-title">
+                        		<div class="Title1">
+	                            	<h2>My Portfolio (This Site)</h2>
+	                            	
+		                            <ul class="list-inline item-details"> 
+
+		                                <a class="btn btn-default" href="https://github.com/tylerjlawson/tylerjlawson.github.io" target="_blank"><i class="fa fa-code"></i> See the Code</a>
+
+
+		                          
+	                            	</ul>
+	                            </div>
+	                            <div class="Title2">
+	                            	<button type="button" class="modal-close" data-dismiss="modal"><i class="fa fa-times"></i></button>
+	                            </div>
+	                        </div>
+                            <div class="Photos">
+								<div class="Image-Desktop">
+									<img src="/projects/images/portfolio/desktop.png">
+								</div>
+								<div class="Image-Tablet">
+									<img src="/projects/images/portfolio/tablet.png">
+								</div>
+								<div class="Image-Mobile">
+									<img src="/projects/images/portfolio/mobile.png">
+								</div>
+							</div>
+                            <p>
+                              I made my portfolio almost completely from scratch. The only aspect that I did not personally create was the bootsrap modals I used to showcase my work. I thought it would be a good idea to get some experience with implementing Bootstrap into a project because it is a very useful tool.  
+                            </p>
+                            <p>I made the page in order to display my skills and work. I kept it simple and hopefully attractive.</p>
+                            <p>Please feel free to look at the code and ask me questions either by email or directly on Github.</p>
+                            <b>
+                              SCSS  |  Bootstrap  |  HTML  |  JavaScript
+                            </b>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
 
 	<div class="anchor" id="contact"></div>
 	<section class="Contact">
@@ -93,5 +255,9 @@
 		 Tyler Lawson. All Rights Reserved.</p>
 	</footer>
 	
+	<script src="/assets/js/jquery.min.js"></script>
+	<script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+
+
 </body>
 </html>
