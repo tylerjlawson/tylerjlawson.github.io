@@ -177,3 +177,14 @@ span {
 .Projects .portfolio-item .portfolio-link .caption {
   background: rgba(129, 138, 163, 0.5);
 }
+
+/* line 149, ../sass/default-mobile.scss */
+.Page-Subtitle {
+  text-align: center;
+}
+
+/* line 152, ../sass/default-mobile.scss */
+.Contact .Social {
+  margin: auto;
+  margin-top: 3rem;
+}
