@@ -41,27 +41,29 @@ a {
 
 /* line 37, ../sass/default.scss */
 .Header .Desktop-Only {
-  display: flex;
-  justify-content: space-between;
   color: #fff;
   background: #000;
-  padding: 1rem;
+  padding: 2rem 0;
   transition: .3s ease-in;
-  height: 100px;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 100000000;
 }
-/* line 50, ../sass/default.scss */
+/* line 38, ../sass/default.scss */
+.Header .Desktop-Only .Content {
+  display: flex;
+  justify-content: space-between;
+}
+/* line 51, ../sass/default.scss */
 .Header .Desktop-Only .Logo {
   font-size: 60px;
   transition: .3s ease-in;
   margin: auto 0;
   max-width: 80%;
 }
-/* line 56, ../sass/default.scss */
+/* line 57, ../sass/default.scss */
 .Header .Desktop-Only nav {
   display: flex;
   align-content: center;
@@ -71,43 +73,44 @@ a {
   justify-content: space-between;
   margin: auto 1rem;
 }
-/* line 64, ../sass/default.scss */
+/* line 65, ../sass/default.scss */
 .Header .Desktop-Only nav a {
   color: #fff;
   font-size: 18px;
   text-decoration: none;
   font-family: "soleil";
 }
-/* line 71, ../sass/default.scss */
-.Header .Desktop-Only.Shrink {
+
+/* line 74, ../sass/default.scss */
+.Header.Shrink {
   height: 70px;
   transition: .3s ease-out;
 }
-/* line 74, ../sass/default.scss */
-.Header .Desktop-Only.Shrink .Logo {
+/* line 77, ../sass/default.scss */
+.Header.Shrink .Logo {
   font-size: 36px;
   transition: .3s ease-out;
 }
 
-/* line 80, ../sass/default.scss */
+/* line 84, ../sass/default.scss */
 body {
   margin: 0;
 }
 
-/* line 83, ../sass/default.scss */
+/* line 87, ../sass/default.scss */
 .Intro {
   margin-top: 70px;
   background-image: url(/assets/images/boston.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
-/* line 88, ../sass/default.scss */
+/* line 92, ../sass/default.scss */
 .Intro .Image-Overlay {
   width: 100%;
   height: 39vw;
   display: flex;
 }
-/* line 92, ../sass/default.scss */
+/* line 96, ../sass/default.scss */
 .Intro .Image-Overlay .TwoColumn {
   width: 640px;
   flex-direction: column;
@@ -115,22 +118,22 @@ body {
   padding: 3rem;
   margin: auto;
 }
-/* line 99, ../sass/default.scss */
+/* line 103, ../sass/default.scss */
 .Intro .Image-Overlay .TwoColumn .Column {
   padding-bottom: 2rem;
 }
-/* line 101, ../sass/default.scss */
+/* line 105, ../sass/default.scss */
 .Intro .Image-Overlay .TwoColumn .Column h2 {
   color: #fff;
   text-align: center;
   margin: 0;
 }
-/* line 107, ../sass/default.scss */
+/* line 111, ../sass/default.scss */
 .Intro .Image-Overlay .TwoColumn .divider + .Column {
   padding-bottom: 0;
   padding-top: 2rem;
 }
-/* line 111, ../sass/default.scss */
+/* line 115, ../sass/default.scss */
 .Intro .Image-Overlay .TwoColumn .divider {
   height: 2px;
   width: 150px;
@@ -138,58 +141,58 @@ body {
   background: #fff;
 }
 
-/* line 121, ../sass/default.scss */
+/* line 125, ../sass/default.scss */
 .TwoColumn {
   display: flex;
 }
-/* line 123, ../sass/default.scss */
+/* line 127, ../sass/default.scss */
 .TwoColumn .Column {
   flex: 0 0 50%;
 }
 
-/* line 128, ../sass/default.scss */
+/* line 132, ../sass/default.scss */
 section:not(.Intro) {
   padding: 2rem;
 }
 
-/* line 132, ../sass/default.scss */
+/* line 136, ../sass/default.scss */
 .About {
   background: #818AA3;
 }
-/* line 134, ../sass/default.scss */
+/* line 138, ../sass/default.scss */
 .About .One {
   flex: 0 0 30%;
   text-align: right;
 }
-/* line 137, ../sass/default.scss */
+/* line 141, ../sass/default.scss */
 .About .One img {
   max-width: 300px;
   width: 100%;
   border-radius: 5px;
 }
-/* line 143, ../sass/default.scss */
+/* line 147, ../sass/default.scss */
 .About .Two {
   flex: 0 0 63%;
   margin-left: 2rem;
   color: #fff;
   max-width: 80%;
 }
-/* line 148, ../sass/default.scss */
+/* line 152, ../sass/default.scss */
 .About .Two p:first-child {
   margin-top: 0;
 }
-/* line 151, ../sass/default.scss */
+/* line 155, ../sass/default.scss */
 .About .Two p {
   max-width: 700px;
 }
 
-/* line 157, ../sass/default.scss */
+/* line 161, ../sass/default.scss */
 .Content {
   max-width: 970px;
   margin: auto;
 }
 
-/* line 162, ../sass/default.scss */
+/* line 166, ../sass/default.scss */
 .Page-Subtitle {
   color: #fff;
   margin: 2rem auto;
@@ -197,87 +200,88 @@ section:not(.Intro) {
   margin-top: 0;
 }
 
-/* line 172, ../sass/default.scss */
+/* line 176, ../sass/default.scss */
 .anchor {
   display: block;
   position: relative;
-  top: -100px;
+  top: -79px;
   visibility: hidden;
 }
 
-/* line 179, ../sass/default.scss */
+/* line 183, ../sass/default.scss */
 .Projects {
   background: #fff;
 }
-/* line 181, ../sass/default.scss */
+/* line 185, ../sass/default.scss */
 .Projects p, .Projects h2 {
   color: #374A67;
 }
-/* line 184, ../sass/default.scss */
+/* line 188, ../sass/default.scss */
 .Projects .row {
   margin: 0;
 }
-/* line 187, ../sass/default.scss */
+/* line 191, ../sass/default.scss */
 .Projects .container {
   width: initial;
 }
 
-/* line 196, ../sass/default.scss */
+/* line 200, ../sass/default.scss */
 .Contact {
   background: #374A67;
 }
-/* line 198, ../sass/default.scss */
+/* line 202, ../sass/default.scss */
 .Contact p, .Contact h2 {
   color: #fff;
 }
-/* line 201, ../sass/default.scss */
+/* line 205, ../sass/default.scss */
 .Contact .Social {
-  margin-top: 2rem;
-  width: 150px;
+  margin-top: 3rem;
+  margin-left: 0.5rem;
+  width: 155px;
   display: flex;
   justify-content: space-between;
 }
-/* line 207, ../sass/default.scss */
+/* line 212, ../sass/default.scss */
 .Contact .Social a {
   font: 0/0 a;
 }
-/* line 210, ../sass/default.scss */
+/* line 215, ../sass/default.scss */
 .Contact .Social .fa:before {
   font-family: 'FontAwesome';
-  font-size: 30px;
+  font-size: 35px;
   color: #fff;
 }
-/* line 215, ../sass/default.scss */
+/* line 220, ../sass/default.scss */
 .Contact .Social .Email:before {
   content: "\f0e0";
 }
-/* line 218, ../sass/default.scss */
+/* line 223, ../sass/default.scss */
 .Contact .Social .Github:before {
   content: "\f09b";
 }
-/* line 221, ../sass/default.scss */
+/* line 226, ../sass/default.scss */
 .Contact .Social .LinkedIn:before {
   content: "\f0e1";
 }
 
-/* line 228, ../sass/default.scss */
+/* line 233, ../sass/default.scss */
 .Footer {
   background: #000;
   color: #fff;
   padding: 1.5rem 0;
 }
-/* line 232, ../sass/default.scss */
+/* line 237, ../sass/default.scss */
 .Footer p {
   padding: 0;
   margin: 0;
 }
 
-/* line 238, ../sass/default.scss */
+/* line 243, ../sass/default.scss */
 .Projects .col-md-6.portfolio-item {
   padding: 0;
 }
 
-/* line 241, ../sass/default.scss */
+/* line 246, ../sass/default.scss */
 .Projects .portfolio-item .portfolio-link .caption {
   background: rgba(129, 138, 163, 0.7);
   position: absolute;
@@ -289,7 +293,7 @@ section:not(.Intro) {
   -moz-transition: all ease 0.5s;
 }
 
-/* line 252, ../sass/default.scss */
+/* line 257, ../sass/default.scss */
 .Projects .portfolio-item .portfolio-link .caption .caption-content {
   position: absolute;
   width: 100%;
@@ -300,51 +304,51 @@ section:not(.Intro) {
   margin-top: -12px;
   color: white;
 }
-/* line 261, ../sass/default.scss */
+/* line 266, ../sass/default.scss */
 .Projects .portfolio-item .portfolio-link .caption .caption-content p {
   color: #fff;
 }
 
-/* line 265, ../sass/default.scss */
+/* line 270, ../sass/default.scss */
 .Projects .portfolio-item .portfolio-link .caption .caption-content i {
   margin-top: -12px;
 }
 
-/* line 268, ../sass/default.scss */
+/* line 273, ../sass/default.scss */
 .Projects .portfolio-item .portfolio-link .caption .caption-content h3,
 .Projects .portfolio-item .portfolio-link .caption .caption-content h4 {
   margin: 0;
 }
 
-/* line 272, ../sass/default.scss */
+/* line 277, ../sass/default.scss */
 .Projects * {
   z-index: 2;
 }
 
-/* line 276, ../sass/default.scss */
+/* line 281, ../sass/default.scss */
 .modal {
   z-index: 105100000;
 }
 
-/* line 280, ../sass/default.scss */
+/* line 285, ../sass/default.scss */
 .Photos {
   width: 100%;
   margin-bottom: 2rem;
   position: relative;
 }
-/* line 284, ../sass/default.scss */
+/* line 289, ../sass/default.scss */
 .Photos img {
   max-width: 100%;
   border-radius: 5px;
 }
-/* line 289, ../sass/default.scss */
+/* line 294, ../sass/default.scss */
 .Photos .Image-Tablet {
   position: absolute;
   width: 25%;
   bottom: 0;
   left: 0;
 }
-/* line 295, ../sass/default.scss */
+/* line 300, ../sass/default.scss */
 .Photos .Image-Mobile {
   position: absolute;
   bottom: 0;
@@ -352,35 +356,40 @@ section:not(.Intro) {
   right: 0;
 }
 
-/* line 304, ../sass/default.scss */
+/* line 309, ../sass/default.scss */
 .modal-content .item-details .li-modal a {
   font: 0/0 a;
 }
-/* line 307, ../sass/default.scss */
+/* line 312, ../sass/default.scss */
 .modal-content h2 {
   display: inline-block;
 }
-/* line 310, ../sass/default.scss */
+/* line 315, ../sass/default.scss */
 .modal-content .modal-title {
   display: flex;
   justify-content: space-between;
   margin-bottom: 2rem;
 }
-/* line 315, ../sass/default.scss */
+/* line 320, ../sass/default.scss */
 .modal-content .item-details {
   margin: 0;
   margin-top: 1rem;
 }
 
-/* line 320, ../sass/default.scss */
+/* line 325, ../sass/default.scss */
 .modal-close {
   border: none;
   background: #fff;
   font-size: 26px;
 }
 
+/* line 331, ../sass/default.scss */
+.portfolio-modal a {
+  color: #000;
+}
+
 @media (max-width: 991px) {
-  /* line 327, ../sass/default.scss */
+  /* line 336, ../sass/default.scss */
   .col-md-6 {
     margin-bottom: 2rem;
   }
