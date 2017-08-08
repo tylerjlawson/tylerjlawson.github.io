@@ -383,8 +383,13 @@ section:not(.Intro) {
   font-size: 26px;
 }
 
+/* line 331, ../sass/default.scss */
+.portfolio-modal a {
+  color: #000;
+}
+
 @media (max-width: 991px) {
-  /* line 332, ../sass/default.scss */
+  /* line 336, ../sass/default.scss */
   .col-md-6 {
     margin-bottom: 2rem;
   }
