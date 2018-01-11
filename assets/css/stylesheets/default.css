@@ -279,9 +279,10 @@ section:not(.Intro) {
 /* line 243, ../sass/default.scss */
 .Projects .col-md-6.portfolio-item {
   padding: 0;
+  max-height: 255px;
 }
 
-/* line 246, ../sass/default.scss */
+/* line 247, ../sass/default.scss */
 .Projects .portfolio-item .portfolio-link .caption {
   background: rgba(129, 138, 163, 0.7);
   position: absolute;
@@ -293,7 +294,7 @@ section:not(.Intro) {
   -moz-transition: all ease 0.5s;
 }
 
-/* line 257, ../sass/default.scss */
+/* line 258, ../sass/default.scss */
 .Projects .portfolio-item .portfolio-link .caption .caption-content {
   position: absolute;
   width: 100%;
@@ -304,51 +305,51 @@ section:not(.Intro) {
   margin-top: -12px;
   color: white;
 }
-/* line 266, ../sass/default.scss */
+/* line 267, ../sass/default.scss */
 .Projects .portfolio-item .portfolio-link .caption .caption-content p {
   color: #fff;
 }
 
-/* line 270, ../sass/default.scss */
+/* line 271, ../sass/default.scss */
 .Projects .portfolio-item .portfolio-link .caption .caption-content i {
   margin-top: -12px;
 }
 
-/* line 273, ../sass/default.scss */
+/* line 274, ../sass/default.scss */
 .Projects .portfolio-item .portfolio-link .caption .caption-content h3,
 .Projects .portfolio-item .portfolio-link .caption .caption-content h4 {
   margin: 0;
 }
 
-/* line 277, ../sass/default.scss */
+/* line 278, ../sass/default.scss */
 .Projects * {
   z-index: 2;
 }
 
-/* line 281, ../sass/default.scss */
+/* line 282, ../sass/default.scss */
 .modal {
   z-index: 105100000;
 }
 
-/* line 285, ../sass/default.scss */
+/* line 286, ../sass/default.scss */
 .Photos {
   width: 100%;
   margin-bottom: 2rem;
   position: relative;
 }
-/* line 289, ../sass/default.scss */
+/* line 290, ../sass/default.scss */
 .Photos img {
   max-width: 100%;
   border-radius: 5px;
 }
-/* line 294, ../sass/default.scss */
+/* line 295, ../sass/default.scss */
 .Photos .Image-Tablet {
   position: absolute;
   width: 25%;
   bottom: 0;
   left: 0;
 }
-/* line 300, ../sass/default.scss */
+/* line 301, ../sass/default.scss */
 .Photos .Image-Mobile {
   position: absolute;
   bottom: 0;
@@ -356,40 +357,40 @@ section:not(.Intro) {
   right: 0;
 }
 
-/* line 309, ../sass/default.scss */
+/* line 310, ../sass/default.scss */
 .modal-content .item-details .li-modal a {
   font: 0/0 a;
 }
-/* line 312, ../sass/default.scss */
+/* line 313, ../sass/default.scss */
 .modal-content h2 {
   display: inline-block;
 }
-/* line 315, ../sass/default.scss */
+/* line 316, ../sass/default.scss */
 .modal-content .modal-title {
   display: flex;
   justify-content: space-between;
   margin-bottom: 2rem;
 }
-/* line 320, ../sass/default.scss */
+/* line 321, ../sass/default.scss */
 .modal-content .item-details {
   margin: 0;
   margin-top: 1rem;
 }
 
-/* line 325, ../sass/default.scss */
+/* line 326, ../sass/default.scss */
 .modal-close {
   border: none;
   background: #fff;
   font-size: 26px;
 }
 
-/* line 331, ../sass/default.scss */
+/* line 332, ../sass/default.scss */
 .portfolio-modal a {
   color: #000;
 }
 
 @media (max-width: 991px) {
-  /* line 336, ../sass/default.scss */
+  /* line 337, ../sass/default.scss */
   .col-md-6 {
     margin-bottom: 2rem;
   }

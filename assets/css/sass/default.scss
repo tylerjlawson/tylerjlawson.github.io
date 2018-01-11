@@ -242,6 +242,7 @@ section:not(.Intro){
 
 .Projects .col-md-6.portfolio-item{
 	padding: 0;
+	max-height: 255px;
 }
 .Projects .portfolio-item .portfolio-link .caption {
   background: rgba(129, 138, 163, .7);
