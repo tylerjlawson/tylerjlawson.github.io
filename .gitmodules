@@ -1,0 +1,3 @@
+[submodule "themes/somrat"]
+	path = themes/somrat
+	url = git@github.com:tylerjlawson/somrat.git
