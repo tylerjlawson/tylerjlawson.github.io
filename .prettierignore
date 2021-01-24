@@ -1,1 +1,6 @@
 .yarn
+public
+plugins
+
+# File has some hugo if checks on attribute tags that are breaking with prettier
+themes/somrat/layouts/index.html
