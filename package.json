@@ -1,0 +1,15 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "repository": "git@github.com:tylerjlawson/tylerjlawson.github.io.git",
+  "author": "Tyler Lawson <tylerjlawson2@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "hugo server",
+    "build": "hugo"
+  },
+  "devDependencies": {
+    "prettier": "^2.2.1",
+    "prettier-plugin-go-template": "^0.0.10"
+  }
+}
