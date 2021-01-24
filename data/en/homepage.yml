@@ -5,7 +5,7 @@ hero:
   # animated text loop
   occupations:
     - 'Software Engineer'
-    - 'Web Developer'
+    - 'Full-stack Web Developer'
     - 'Bread Maker'
     - 'Skier'
     - 'Dog Owner'
@@ -20,11 +20,11 @@ hero:
   button:
     enable: true
     label: 'HIRE ME'
-    link: '#contact'
+    link: 'mailto:tylerjlawson2@gmail.com?subject=Please Work For Me'
 
 ####################### Full screen navigation #####################
 fullscreen_nav:
-  enable: true
+  enable: false
   bg_image: 'images/backgrounds/full-nav-bg.jpg'
   first_name: 'Tyler'
   last_name: 'Lawson'
@@ -88,7 +88,7 @@ skill:
 
 ################################### Service ##############################3
 service:
-  enable: true
+  enable: false
   title: 'SERVICES'
   service_list:
     # service item loop
@@ -117,7 +117,7 @@ service:
 
 ############################## call to action #########################
 call_to_action:
-  enable: true
+  enable: false
   bg_image: 'images/backgrounds/need-service.jpg'
   title: 'NEED A SERVICE?'
   button:
@@ -222,7 +222,7 @@ portfolio:
 
 ################################# Testimonial #########################33
 testimonial:
-  enable: true
+  enable: false
   title: 'TESTIMONIALS'
   testimonial_slider:
     # slider item loop
@@ -275,5 +275,5 @@ funfacts:
 
 ############################## contact ###########################
 contact:
-  enable: true
+  enable: false
   title: 'SAY HELLO!'
