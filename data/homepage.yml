@@ -84,8 +84,8 @@ portfolio:
   title: 'MY WORK'
   portfolio_list:
     # portfolio item loop
-    - name: 'Project <br> Title'
-      image: 'images/portfolio/item1.jpg'
+    - name: 'Project Title'
+      image: 'images/portfolio/cbd.png'
       date: 'Feb 2018'
       caption: Ullamco irure labore proident qui proident fugiat dolore do officia.
 

@@ -55,6 +55,7 @@ weight = 3
 [params]
 logo_light = "images/logo.svg"
 logo_dark = "images/logo-dark.svg"
+copyright = "Copyright &copy; 2021 Tyler Lawson"
 # Meta data
 description = "Personal Portfolio"
 author = "Tyler Lawson"
@@ -81,5 +82,3 @@ link = "mailto:tylerjlawson2@gmail.com"
 contentDir = "content/english"
 weight = 1
 home = "Home"
-# copyright
-copyright = "Copyright &copy; 2021 Tyler Lawson"
