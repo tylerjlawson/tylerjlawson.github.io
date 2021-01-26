@@ -2,8 +2,6 @@
 baseURL = "https://tyler-lawson.com"
 title = "Tyler Lawson"
 theme = "somrat"
-# disable language
-disableLanguages = [] # disable language from here
 
 ############################# Plugins ##############################
 
@@ -80,11 +78,6 @@ link = "https://www.linkedin.com/in/tyler-lawson-3a370b137/"
 icon = "fas fa-envelope"
 link = "mailto:tylerjlawson2@gmail.com"
 
-
-################################### English language #####################################
-[Languages.en]
-languageName = "En"
-languageCode = "en-us"
 contentDir = "content/english"
 weight = 1
 home = "Home"
