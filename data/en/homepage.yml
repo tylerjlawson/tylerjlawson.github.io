@@ -40,6 +40,7 @@ about:
     enable: true
     label: 'DOWNLOAD MY RESUME'
     link: 'https://tyler-lawson.com/resume/Resume.pdf'
+    icon: 'fa-download'
 
 ###########################3 Experience ##############################
 experience:
@@ -253,21 +254,17 @@ testimonial:
 funfacts:
   enable: true
   funfacts_list:
-    - name: 'HANDS TO WORK'
-      image: 'images/icons/works.png'
-      count: '100'
-
-    - name: 'HAPPY CLIENT'
-      image: 'images/icons/happy.png'
-      count: '200'
-
-    - name: 'FINISHED PROJECT'
-      image: 'images/icons/project.png'
-      count: '250'
-
-    - name: 'CUPS OF COFFEE'
+    - name: 'CUPS PER DAY'
       image: 'images/icons/coffee.png'
-      count: '150'
+      count: '2'
+
+    - name: 'SITES BUILT'
+      image: 'images/icons/works.png'
+      count: '25'
+
+    - name: 'USELESS PRETTY ROW OF ICONS'
+      image: 'images/icons/project.png'
+      count: '1'
 
 ############################## contact ###########################
 contact:
