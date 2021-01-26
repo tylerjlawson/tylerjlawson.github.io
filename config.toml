@@ -1,5 +1,5 @@
 ######################## default configuration ####################
-baseURL = "https://examplesite.com"
+baseURL = "https://tyler-lawson.com"
 title = "Tyler Lawson"
 theme = "somrat"
 # disable language
@@ -15,11 +15,7 @@ link = "plugins/fontawesome/css/all.min.css"
 [[params.plugins.css]]
 link = "plugins/hover/hover.css"
 [[params.plugins.css]]
-link = "plugins/magnific-popup/magnific-popup.css"
-[[params.plugins.css]]
-link = "plugins/owl-carousel/owl.carousel.min.css"
-[[params.plugins.css]]
-link = "plugins/owl-carousel/owl.theme.default.min.css"
+link = "plugins/hugrid/hugrid.css"
 [[params.plugins.css]]
 link = "plugins/text-animation/text-animation.css"
 [[params.plugins.css]]
@@ -37,11 +33,7 @@ link = "plugins/text-animation/text-animation.js"
 [[params.plugins.js]]
 link = "plugins/jquery.waypoints.min.js"
 [[params.plugins.js]]
-link = "plugins/filterizr/jquery.filterizr.min.js"
-[[params.plugins.js]]
-link = "plugins/magnific-popup/jquery.magnific-popup.min.js"
-[[params.plugins.js]]
-link = "plugins/owl-carousel/owl.carousel.min.js"
+link = "plugins/hugrid/modernizr.custom.min.js"
 
 
 ############################## navigation ###############################
@@ -65,8 +57,8 @@ weight = 3
 
 #################### default parameters ################################
 [params]
-logo_light = "images/logo.png"
-logo_dark = "images/logo-dark.png"
+logo_light = "images/logo.svg"
+logo_dark = "images/logo-dark.svg"
 # Meta data
 description = "Personal Portfolio"
 author = "Tyler Lawson"
@@ -79,12 +71,16 @@ preloader = "images/preloader.gif" # use jpg, png, svg or gif format.
 ############################# social site ########################
 
 [[params.social]]
-icon = "fa-github" # fontawesome icon 4.7.0 : https://fontawesome.com/v4.7.0/icons/
+icon = "fab fa-github"
 link = "https://github.com/tylerjlawson"
 
 [[params.social]]
-icon = "fa-linkedin" # fontawesome icon 4.7.0 : https://fontawesome.com/v4.7.0/icons/
+icon = "fab fa-linkedin"
 link = "https://www.linkedin.com/in/tyler-lawson-3a370b137/"
+
+[[params.social]]
+icon = "fas fa-envelope"
+link = "mailto:tylerjlawson2@gmail.com"
 
 
 ################################### English language #####################################

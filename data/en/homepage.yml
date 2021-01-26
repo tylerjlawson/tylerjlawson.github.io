@@ -10,17 +10,8 @@ hero:
     - 'Skier'
     - 'Dog Owner'
 
-  # slider background image loop
-  slider_image:
-    - 'images/slider/slider-1.jpg'
-    - 'images/slider/slider-2.jpg'
-    - 'images/slider/slider-3.jpg'
-
-  # button
-  button:
-    enable: true
-    label: 'HIRE ME'
-    link: 'mailto:tylerjlawson2@gmail.com?subject=Please Work For Me'
+  # hero background image
+  background_image: 'images/background.jpg'
 
 ####################### Full screen navigation #####################
 fullscreen_nav:
@@ -34,7 +25,7 @@ about:
   enable: true
   image: 'images/profile.jpg'
   title: 'THIS IS ME'
-  content: 'About me lorem ipsum'
+  content: 'Hi, my name is Tyler and I am a full time software engineer, doing full time full stack (but mostly React/Typescript) web development.'
   # button
   button:
     enable: true
@@ -87,168 +78,16 @@ skill:
     - name: 'Wordpress'
       percentage: '70%'
 
-################################### Service ##############################3
-service:
-  enable: false
-  title: 'SERVICES'
-  service_list:
-    # service item loop
-    - name: 'Web Development'
-      image: 'images/icons/web-development.png'
-
-    # service item loop
-    - name: 'Graphic Design'
-      image: 'images/icons/graphic-design.png'
-
-    # service item loop
-    - name: 'Database Management'
-      image: 'images/icons/dbms.png'
-
-    # service item loop
-    - name: 'Software Development'
-      image: 'images/icons/software-development.png'
-
-    # service item loop
-    - name: 'Digital Marketing'
-      image: 'images/icons/marketing.png'
-
-    # service item loop
-    - name: 'Mobile App Development'
-      image: 'images/icons/mobile-app.png'
-
-############################## call to action #########################
-call_to_action:
-  enable: false
-  bg_image: 'images/backgrounds/need-service.jpg'
-  title: 'NEED A SERVICE?'
-  button:
-    enable: true
-    label: 'SAY HELLO!'
-    link: '#contact'
-
 ############################# portfolio ################################
 portfolio:
   enable: true
-  title: 'PORTFOLIO'
+  title: 'MY WORK'
   portfolio_list:
     # portfolio item loop
     - name: 'Project <br> Title'
       image: 'images/portfolio/item1.jpg'
       date: 'Feb 2018'
-      category: 'Web Development'
-
-    # portfolio item loop
-    - name: 'Project <br> Title'
-      image: 'images/portfolio/item2.jpg'
-      date: 'Feb 2018'
-      category: 'Web Development'
-
-    # portfolio item loop
-    - name: 'Project <br> Title'
-      image: 'images/portfolio/item3.jpg'
-      date: 'Feb 2018'
-      category: 'Web Development'
-
-    # portfolio item loop
-    - name: 'Project <br> Title'
-      image: 'images/portfolio/item4.jpg'
-      date: 'Feb 2018'
-      category: 'Web Development'
-
-    # portfolio item loop
-    - name: 'Project <br> Title'
-      image: 'images/portfolio/item5.jpg'
-      date: 'Feb 2018'
-      category: 'Web Development'
-
-    # portfolio item loop
-    - name: 'Project <br> Title'
-      image: 'images/portfolio/item6.jpg'
-      date: 'Feb 2018'
-      category: 'Web Development'
-
-    # portfolio item loop
-    - name: 'Project <br> Title'
-      image: 'images/portfolio/item7.jpg'
-      date: 'Feb 2018'
-      category: 'Graphics'
-
-    # portfolio item loop
-    - name: 'Project <br> Title'
-      image: 'images/portfolio/item8.jpg'
-      date: 'Feb 2018'
-      category: 'Graphics'
-
-    # portfolio item loop
-    - name: 'Project <br> Title'
-      image: 'images/portfolio/item9.jpg'
-      date: 'Feb 2018'
-      category: 'Database'
-
-    # portfolio item loop
-    - name: 'Project <br> Title'
-      image: 'images/portfolio/item10.jpg'
-      date: 'Feb 2018'
-      category: 'Database'
-
-    # portfolio item loop
-    - name: 'Project <br> Title'
-      image: 'images/portfolio/item11.jpg'
-      date: 'Feb 2018'
-      category: 'Database'
-
-    # portfolio item loop
-    - name: 'Project <br> Title'
-      image: 'images/portfolio/item12.jpg'
-      date: 'Feb 2018'
-      category: 'Graphics'
-
-    # portfolio item loop
-    - name: 'Project <br> Title'
-      image: 'images/portfolio/item13.jpg'
-      date: 'Feb 2018'
-      category: 'Graphics'
-
-    # portfolio item loop
-    - name: 'Project <br> Title'
-      image: 'images/portfolio/item14.jpg'
-      date: 'Feb 2018'
-      category: 'Graphics'
-
-    # portfolio item loop
-    - name: 'Project <br> Title'
-      image: 'images/portfolio/item15.jpg'
-      date: 'Feb 2018'
-      category: 'Graphics'
-
-################################# Testimonial #########################33
-testimonial:
-  enable: false
-  title: 'TESTIMONIALS'
-  testimonial_slider:
-    # slider item loop
-    - name: 'Micheal Clark'
-      image: 'images/clients/client1.jpg'
-      designation: 'CEO, RANDOM COMPANY'
-      content:
-        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores ad,
-        omnis totam iusto quia? Excepturi itaque quaerat, quia unde delectus rem error dignissimos in iusto.'
-
-    # slider item loop
-    - name: 'Peter Parker'
-      image: 'images/clients/client2.jpg'
-      designation: 'CEO, RANDOM COMPANY'
-      content:
-        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores ad,
-        omnis totam iusto quia? Excepturi itaque quaerat, quia unde delectus rem error dignissimos in iusto.'
-
-    # slider item loop
-    - name: 'Jessica Jones'
-      image: 'images/clients/client3.jpg'
-      designation: 'CEO, RANDOM COMPANY'
-      content:
-        'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores ad,
-        omnis totam iusto quia? Excepturi itaque quaerat, quia unde delectus rem error dignissimos in iusto.'
+      caption: Ullamco irure labore proident qui proident fugiat dolore do officia.
 
 ######################### funfacts #############################3
 funfacts:
@@ -259,14 +98,9 @@ funfacts:
       count: '2'
 
     - name: 'SITES BUILT'
-      image: 'images/icons/works.png'
+      image: 'images/icons/web-development.png'
       count: '25'
 
-    - name: 'USELESS PRETTY ROW OF ICONS'
-      image: 'images/icons/project.png'
+    - name: 'USELESS ROW OF ICONS'
+      image: 'images/icons/happy.png'
       count: '1'
-
-############################## contact ###########################
-contact:
-  enable: false
-  title: 'SAY HELLO!'
