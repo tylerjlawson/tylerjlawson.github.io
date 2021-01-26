@@ -284,8 +284,8 @@
             <ul id="og-grid" class="og-grid">
               {{ range .portfolio_list }}
                 {{ $image := resources.Get .image }}
-                {{ $big_image := $image.Fill "500x500" }}
-                {{ $sm_image := $image.Fill "250x250" }}
+                {{ $big_image := $image.Fill "800x500" }}
+                {{ $sm_image := $image.Fill "400x250" }}
                 <li>
                   <a
                     href="{{ .url }}"
