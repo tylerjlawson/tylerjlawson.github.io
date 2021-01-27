@@ -92,9 +92,21 @@ portfolio:
   enable: true
   title: 'MY WORK'
   portfolio_list:
+    # TODO add cbd v2, crochet (https://nikkiocrochet.com/), author by humana!
+
+    # TODO write description
+    - name: My First Portfolio
+      image: 'images/portfolio/oldPortfolio.png'
+
+    # TODO write description
+    - name: The PLPT
+      image: 'images/portfolio/plpt.png'
+      buttontext: SEE SITE
+      url: https://thepulpit.github.io
+
     - name: Visiting Dental Hygiene
       image: 'images/portfolio/vdha.png'
-      description: This site was first made using a wordpress template in 2017 and was redone in 2019 to use [amp.dev](https://amp.dev/)
+      description: This site was first made using a wordpress template in 2017 and was redone in 2019 to use [amp.dev](https://amp.dev/). I was particularly excited to test out this framework. For sites that are small and custom, it is lightweight and easy to use. You can see the [project repo here](https://github.com/visitingdentalhygiene/VDHAWebsite).
 
     - name: Creative Business Design V1
       image: 'images/portfolio/cbd.png'

@@ -303,8 +303,8 @@
             <ul id="og-grid" class="og-grid">
               {{ range .portfolio_list }}
                 {{ $image := resources.Get .image }}
-                {{ $big_image := $image.Fill "800x500 jpg" }}
-                {{ $sm_image := $image.Fill "400x250 jpg" }}
+                {{ $big_image := $image.Fill "780x500 jpg" }}
+                {{ $sm_image := $image.Fill "395x250 jpg" }}
                 <li>
                   <p id="description-{{.name | urlize}}" class='hidden'>{{ .description | markdownify }}</p>
                   <a
