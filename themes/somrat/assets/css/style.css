@@ -33,7 +33,7 @@ body {
   opacity: 1;
 }
 
-a:hover {
+.portfolio a:hover {
   font-weight: 500;
   text-decoration: none;
 }
@@ -1714,10 +1714,6 @@ textarea.form-control::-webkit-input-placeholder,
   font-size: 17px;
 }
 
-.footer-icons .fa.fa-facebook-f {
-  padding: 7px 10px;
-}
-
 .footer-icons .fa,
 .to-top .fa {
   -webkit-transition: all 0.3s;
@@ -1985,7 +1981,7 @@ textarea.form-control::-webkit-input-placeholder,
 }
 
 .footer-icon:hover {
-  color: blue;
+  color: #818aa3;
 }
 
 /*--------------------------------
