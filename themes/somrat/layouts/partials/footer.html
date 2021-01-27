@@ -4,7 +4,9 @@
 {{ end }}
 
 {{ "<!-- Main Script -->" | safeHTML }}
-{{ $script := resources.Get "js/script.js" | minify }}
+{{ $script := resources.Get "js/script.js" }}
+<script src="{{ $script.Permalink }}"></script>
+{{ $script := resources.Get "js/hugrid.custom.js" }}
 <script src="{{ $script.Permalink }}"></script>
 
 {{ "<!-- google analytics -->" | safeHTML }}

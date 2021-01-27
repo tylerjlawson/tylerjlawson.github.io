@@ -1031,16 +1031,7 @@ input:checked + label span:last-child {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
-  width: 70%;
-}
-
-.about-me-images img:hover {
-  width: 70%;
-  -webkit-filter: grayscale(0%);
-  -moz-filter: grayscale(0%);
-  -ms-filter: grayscale(0%);
-  -o-filter: grayscale(0%);
-  filter: grayscale(0%);
+  width: 90%;
 }
 
 /* ========= Start Experience ======= */
