@@ -33,6 +33,11 @@ body {
   opacity: 1;
 }
 
+a:hover {
+  font-weight: 500;
+  text-decoration: none;
+}
+
 .preloader {
   position: fixed;
   top: 0;
@@ -297,6 +302,16 @@ body {
   padding: 5px 18px;
   -webkit-transition: all 0.2s;
   transition: all 0.2s;
+}
+
+.button {
+  text-decoration: none;
+  color: #4d4d4d;
+  font-weight: 700;
+  margin-top: 15px;
+  display: inline-block;
+  border: 2px solid #4d4d4d;
+  padding: 7px 10px;
 }
 
 .button:hover {
@@ -876,18 +891,6 @@ input:checked + label span:last-child {
   position: relative;
 }
 
-.services-heading h1:before {
-  content: '';
-  position: absolute;
-  top: -8px;
-  right: 0;
-  left: 0;
-  margin: auto;
-  width: 70px;
-  height: 5px;
-  background: #6f6f6f;
-}
-
 .services-icon {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1015,16 +1018,6 @@ input:checked + label span:last-child {
 .about-me-text p {
   color: #6f6f6f;
   font-size: 16px;
-}
-
-.download-cv {
-  text-decoration: none;
-  color: #4d4d4d;
-  font-weight: 700;
-  margin-top: 15px;
-  display: inline-block;
-  border: 2px solid #4d4d4d;
-  padding: 7px 10px;
 }
 
 .download-cv:hover,
@@ -1214,18 +1207,6 @@ ul.experience-chart h4 {
   position: relative;
 }
 
-.certifications-heading h1:before {
-  content: '';
-  position: absolute;
-  top: -8px;
-  right: 0;
-  left: 0;
-  margin: auto;
-  width: 70px;
-  height: 5px;
-  background: #6f6f6f;
-}
-
 .certifications-icon {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1291,14 +1272,8 @@ ul.experience-chart h4 {
   position: relative;
 }
 
-.portfolio h1:before {
-  content: '';
-  height: 5px;
-  background: #6f6f6f;
-  position: absolute;
-  top: -15px;
-  left: 46.5%;
-  right: 46.5%;
+.hidden {
+  display: none !important;
 }
 
 .filtering {

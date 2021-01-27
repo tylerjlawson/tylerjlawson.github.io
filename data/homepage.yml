@@ -38,19 +38,16 @@ experience:
   enable: true
   title: 'EXPERIENCE'
   experience_list:
-    # experience item loop
     - name: 'Web Developer'
       company: 'Fiverr.com'
       duration: '2016-2018'
       content: 'I work with HTML, CSS, and Javascript to create websites and web applications like Personal, Business, Blog, E-commerce etc.'
 
-    # experience item loop
     - name: 'Graphic Designer'
       company: 'Fiverr.com'
       duration: '2015-2018'
       content: 'Graphic design is art with a purpose. I love illustration, so logo desing is my favorite work. But i can do many things with graphics.'
 
-    # experience item loop
     - name: 'Database Manager'
       company: 'Polytechnic'
       duration: '2014-2018'
@@ -62,32 +59,17 @@ skill:
   title: 'SKILL'
   showpercent: false
   skill_list:
-    # skill item loop
     - name: 'Web Development'
       percentage: '98%'
 
-    # skill item loop
     - name: 'Graphic Design'
       percentage: '85%'
 
-    # skill item loop
     - name: 'Database Management'
       percentage: '90%'
 
-    # skill item loop
     - name: 'Wordpress'
       percentage: '70%'
-
-############################# portfolio ################################
-portfolio:
-  enable: true
-  title: 'MY WORK'
-  portfolio_list:
-    # portfolio item loop
-    - name: 'Project Title'
-      image: 'images/portfolio/cbd.png'
-      date: 'Feb 2018'
-      caption: Ullamco irure labore proident qui proident fugiat dolore do officia.
 
 ######################### funfacts #############################3
 funfacts:
@@ -104,3 +86,32 @@ funfacts:
     - name: 'USELESS ROW OF ICONS'
       image: 'images/icons/happy.png'
       count: '1'
+
+############################# portfolio ################################
+portfolio:
+  enable: true
+  title: 'MY WORK'
+  portfolio_list:
+    - name: Visiting Dental Hygiene
+      image: 'images/portfolio/vdha.png'
+      description: This site was first made using a wordpress template in 2017 and was redone in 2019 to use [amp.dev](https://amp.dev/)
+
+    - name: Creative Business Design V1
+      image: 'images/portfolio/cbd.png'
+      description: Creative Business design was the final site that I did during my time at Getfused as an Intern.
+
+    - name: Private Client Underwriters
+      image: 'images/portfolio/privateClientU.png'
+      description: This was the first site I ever styled and worked on. This was done during my first month at Getfused. I was given a mockup from a photoshop file and delivered the finished site by styling the site mostly from scratch.
+      buttontext: SEE SITE
+      url: https://www.privateclientu.com/
+
+    - name: Wynn Casino
+      image: 'images/portfolio/wynn.png'
+      description: I made another site using CSS while at Getfused for what was supposed to be a construction project website for the Wynn Casino in Boston. The site never launched, but I am proud of the work nonetheless.
+
+    - name: Skipjack's
+      image: 'images/portfolio/skipjacks.png'
+      description: This is a site I made while at Getfused. I had some fun making the animated header using CSS shapes as well.
+      buttontext: SEE SITE
+      url: https://www.skipjacks.com/

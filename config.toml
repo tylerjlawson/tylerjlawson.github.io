@@ -53,7 +53,7 @@ weight = 3
 [params]
 logo_light = "images/logo.svg"
 logo_dark = "images/logo-dark.svg"
-copyright = "Copyright &copy; 2021 Tyler Lawson"
+copyright = "Copyright Tyler Lawson &copy;"
 # Meta data
 description = "Personal Portfolio"
 author = "Tyler Lawson"

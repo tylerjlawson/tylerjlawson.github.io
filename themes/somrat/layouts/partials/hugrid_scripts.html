@@ -269,7 +269,7 @@
 					create : function() {
 						this.$title = $( '<h3></h3>' );
 						this.$description = $( '<p></p>' );
-						this.$href = $( '<a href="#" target="_blank">{{ .Site.Params.buttontext }}</a>' );
+						this.$href = $( '<a href="#" class="button" target="_blank">{{ .Site.Params.buttontext }}</a>' );
 						this.$details = $( '<div class="og-details"></div>' ).append( this.$title, this.$description, this.$href );
 						this.$loading = $( '<div class="og-loading"></div>' );
 						this.$fullimage = $( '<div class="og-fullimg"></div>' ).append( this.$loading );
@@ -294,18 +294,31 @@
 							this.positionPreview();
 						}
 
-						current = this.$item.index();
+            current = this.$item.index();
+
+            function formatForUrl(str) {
+              return str.replace(/_/g, '-')
+                  .replace(/ /g, '-')
+                  .replace(/:/g, '-')
+                  .replace(/\\/g, '-')
+                  .replace(/\//g, '-')
+                  .replace(/[^a-zA-Z0-9\-]+/g, '')
+                  .replace(/-{2,}/g, '-')
+                  .toLowerCase();
+            };
 
 						var $itemEl = this.$item.children( 'a' ),
 							eldata = {
 								href : $itemEl.attr( 'href' ),
 								largesrc : $itemEl.data( 'largesrc' ),
 								title : $itemEl.data( 'title' ),
-								description : $itemEl.data( 'description' ),
+								description : $(`#description-${formatForUrl($itemEl.data( 'title' ))}`).html(),
 								buttontext : $itemEl.data( 'buttontext' )
-							};
+              };
 
-						this.$title.html( eldata.title );
+            console.log($(`#description-${formatForUrl($itemEl.data( 'title' ))}`).html());
+
+            this.$title.html( eldata.title );
 						this.$description.html( eldata.description );
 						if(eldata.buttontext) this.$href.text(eldata.buttontext);
 						else this.$href.text("{{ .Site.Params.buttontext }}")

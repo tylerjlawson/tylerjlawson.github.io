@@ -100,6 +100,7 @@
                           >{{ . }}</b
                         >{{ end }}
 
+
                       <!-- prettier-ignore-end -->
                     {{ end }}
                   </span>
@@ -268,6 +269,24 @@
       End About Me
     =============================== -->
 
+  {{ if .Site.Data.homepage.funfacts.enable }}
+    {{ with .Site.Data.homepage.funfacts }}
+      <div class="fun-facts container pt-5">
+        {{ range .funfacts_list }}
+          <div class="fun-fact-holder">
+            <img
+              class="img-fluid"
+              src="{{ .image | absURL }}"
+              alt="{{ .name }}"
+            />
+            <p class="fact-counter count" data-count="{{ .count }}">0</p>
+            <p>{{ .name }}</p>
+          </div>
+        {{ end }}
+      </div>
+    {{ end }}
+  {{ end }}
+
   <!-- =============================
        Start Portfolio
     =============================== -->
@@ -284,17 +303,20 @@
             <ul id="og-grid" class="og-grid">
               {{ range .portfolio_list }}
                 {{ $image := resources.Get .image }}
-                {{ $big_image := $image.Fill "800x500" }}
-                {{ $sm_image := $image.Fill "400x250" }}
+                {{ $big_image := $image.Fill "800x500 jpg" }}
+                {{ $sm_image := $image.Fill "400x250 jpg" }}
                 <li>
+                  <p id="description-{{.name | urlize}}" class='hidden'>{{ .description | markdownify }}</p>
                   <a
                     href="{{ .url }}"
                     data-largesrc="{{ $big_image.Permalink }}"
                     data-title="{{ .name }}"
-                    data-description="{{ .description }}"
                     data-buttontext="{{ .buttontext }}"
                   >
-                    <img src="{{ $sm_image.Permalink  }}" alt="{{ .name }} image" />
+                  <img
+                    src="{{ $sm_image.Permalink }}"
+                    alt="{{ .name }} image"
+                  />
                   </a>
                 </li>
               {{ end }}
@@ -313,13 +335,14 @@
       {{ range $.Site.Params.social }}
         <li>
           <a href="{{ .link | safeURL }}" target="_blank"
-            ><i class="{{ .icon }} footer-icon fa-2x"></i
+            ><i class="{{ .icon }} footer-icon fa-3x"></i
           ></a>
         </li>
       {{ end }}
     </ul>
     <div class="credit">
       {{ $.Site.Params.copyright | markdownify }}
+      <span id="current-year"></span>
     </div>
   </div>
 {{ end }}
