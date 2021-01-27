@@ -122,70 +122,6 @@
     =============================== -->
 
   <!-- =============================
-      Start Services
-    =============================== -->
-  {{ if .Site.Data.homepage.service.enable }}
-    <section class="services" id="service">
-      {{ with .Site.Data.homepage.service }}
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12 mx-auto col-sm-12">
-              <div class="services-heading">
-                <div class="bar"></div>
-                <h1>{{ .title }}</h1>
-                <p>{{ .main_description | markdownify }}</p>
-              </div>
-              <div class="row">
-                {{ range .service_list }}
-                  <div class="col-lg-6 col-sm-6">
-                    <div class="service-label">
-                      <span
-                        class="fas fa-stack fa-2x"
-                        style="font-size: 2em; color: #6f6f6f;"
-                      >
-                        <i class="fas fa-square fa-stack-2x"></i>
-                        <i
-                          class="fas fa-xs fa-stack-1x fa-{{ .icon }} fa-inverse"
-                        ></i>
-                      </span>
-                      <h4 style="margin-top:10px">{{ .name | markdownify }}</h4>
-                    </div>
-                    <p class="service-description">
-                      {{ .description | markdownify }}
-                    </p>
-                  </div>
-                {{ end }}
-              </div>
-            </div>
-          </div>
-        </div>
-      {{ end }}
-
-      {{ if .Site.Data.homepage.call_to_action.enable }}
-        {{ with .Site.Data.homepage.call_to_action }}
-          <div
-            class="need-service"
-            style="background-image: url('{{ .bg_image | absURL }}');"
-          >
-            <h1>{{ .title | markdownify }}</h1>
-            {{ with .content }}
-              <p class="text-white">{{ . | markdownify }}</p>
-            {{ end }}
-            {{ if .button.enable }}
-              {{ with .button }}
-                <a href="{{ .link }}">{{ .label }}</a>
-              {{ end }}
-            {{ end }}
-          </div>
-        {{ end }}
-      {{ end }}
-    </section>
-  {{ end }}
-  <!-- =============================
-       End Services
-    =============================== -->
-
-  <!-- =============================
        Start About Me
     =============================== -->
   <section class="about-me" id="about">
@@ -201,7 +137,7 @@
                 <p>{{ .content | markdownify | emojify }}</p>
                 {{ if .button.enable }}
                   {{ with .button }}
-                    <a href="{{ .link | absURL }}" class="button download-cv">
+                    <a href="{{ .link | absURL }}" target='_blank' class="button download-cv">
                       {{ .label }} <i class="fa fa-download"></i
                     ></a>
                   {{ end }}

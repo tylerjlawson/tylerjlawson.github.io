@@ -161,8 +161,6 @@
   // Styling Menu on Scroll
   $('.about-me').waypoint({
     handler: function (direction) {
-      // Fixing Menu after leaving Header Section
-      //$(".menu").toggleClass("menu-fix");
       // Changing Menu background after leaving Header Section
       $('.menu-container').toggleClass('menu-normal');
       $('.menu-item').toggleClass('menu-item-transparent');
@@ -176,7 +174,9 @@
       if (direction == 'up' && a == 'menu-link active') {
         $('.menu-link').trigger('click');
       }
-    }
+    },
+    // make header turn white just before it reaches about me section
+    offset: $('.menu-container').innerHeight() + 25
   });
 
   // Toggle Mobile Menu
