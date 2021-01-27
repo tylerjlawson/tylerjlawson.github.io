@@ -7,29 +7,27 @@ theme = "somrat"
 
 # CSS Plugins
 [[params.plugins.css]]
-link = "plugins/bootstrap/bootstrap.min.css"
+link = "plugins/bootstrap.min.css"
 [[params.plugins.css]]
 link = "plugins/fontawesome/css/all.min.css"
 [[params.plugins.css]]
-link = "plugins/hover/hover.css"
+link = "plugins/hover.css"
 [[params.plugins.css]]
-link = "plugins/hugrid/hugrid.css"
+link = "plugins/hugrid.css"
 [[params.plugins.css]]
-link = "plugins/text-animation/text-animation.css"
+link = "plugins/text-animation.css"
 [[params.plugins.css]]
 link = "https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900&display=swap"
 
 # JS Plugins
 [[params.plugins.js]]
-link = "plugins/jQuery/jquery.min.js"
+link = "plugins/jquery.min.js"
 [[params.plugins.js]]
-link = "plugins/bootstrap/bootstrap.min.js"
-[[params.plugins.js]]
-link = "plugins/text-animation/text-animation.js"
+link = "plugins/text-animation.js"
 [[params.plugins.js]]
 link = "plugins/jquery.waypoints.min.js"
 [[params.plugins.js]]
-link = "plugins/hugrid/modernizr.custom.min.js"
+link = "plugins/hugrid.min.js"
 
 
 ############################## navigation ###############################
