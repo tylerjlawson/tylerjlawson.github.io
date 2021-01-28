@@ -1,7 +1,7 @@
 ######################## default configuration ####################
 baseURL = "https://tyler-lawson.com"
 title = "Tyler Lawson"
-theme = "somrat"
+theme = "mytheme"
 
 ############################# Plugins ##############################
 
