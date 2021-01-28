@@ -1,0 +1,145 @@
+########################## hero area ##########################
+hero:
+  title: "I'm Tyler Lawson"
+
+  # animated text loop
+  occupations:
+    - 'Software Engineer'
+    - 'Full-stack Web Developer'
+    - 'Bread Maker'
+    - 'Skier'
+    - 'Dog Owner'
+
+  # hero background image
+  background_image: 'images/background.jpg'
+
+####################### Full screen navigation #####################
+fullscreen_nav:
+  enable: false
+  bg_image: 'images/backgrounds/full-nav-bg.jpg'
+  first_name: 'Tyler'
+  last_name: 'Lawson'
+
+########################### About ##################################
+about:
+  enable: true
+  image: 'images/profile.jpg'
+  title: 'THIS IS ME'
+  content: Hi, thank you for taking a look around my site. I have redone this page with Hugo to make it easier to make changes and updates in the future. I am a huge fan of the [Hugo project](https://gohugo.io), so I like to use it in most of my 'side project' sites. I recently got my [first published theme for hugo](https://themes.gohugo.io/simple-resume). I have attempted to display a good first glimpse of what I have done in web development with this site. If you have any questions or just want to see more pictures of Gus (the dog), feel free to reach out on [LinkedIn, Github, or by email](#contact)!
+  button:
+    enable: true
+    label: 'DOWNLOAD MY RESUME'
+    link: 'https://tyler-lawson.com/resume/Resume.pdf'
+    icon: 'fa-download'
+
+###########################3 Experience ##############################
+experience:
+  enable: true
+  title: 'EXPERIENCE'
+  experience_list:
+    - name: Software Engineer II
+      company: Author By Humana
+      duration: '2020-Current'
+      content: I work with React and Typescript to create member and public facing web applications. My responsibilities include developing base-level components, assisting teammates with utilizing components, and communicating with the design and product teams.
+
+    - name: Software Engineering Intern
+      company: Humana
+      duration: '2019-2020'
+      content: During my time at Humana as an Intern I worked on a series of internal dashboards. I used Vue and Python Flask for my first dashboard. Then I used .Net Core with Vue for the second dashboard.
+
+    - name: Software Engineering Intern
+      company: 2Is inc.
+      duration: '2018'
+      content: I did not have a single intern project at 2Is, instead I worked on a series of different projects and tasks, which gave me a great breadth of experience that summer. I worked mostly with Common Lisp on new APIs and with refactoring legacy code. I also learned a lot about test driven development (by accident, but it still counts).
+
+    - name: Front-End Engineering Intern
+      company: Getfused
+      duration: '2017'
+      content: This was my first exposure to web development. I showed up in May not having ever worked with HTML, CSS, or even Git. By the time I left that summer I had made 6 sites, started a Github, and found a new passion for web development.
+
+############################### Skill #################################
+skill:
+  enable: true
+  title: 'SOME SKILLS'
+  showpercent: false
+  skill_list:
+    - name: 'React'
+      percentage: '85%'
+
+    - name: 'Typescript'
+      percentage: '85%'
+
+    - name: 'Static Site Generators'
+      percentage: '75%'
+
+    - name: 'Git'
+      percentage: '80%'
+
+######################### funfacts #############################3
+funfacts:
+  enable: true
+  funfacts_list:
+    - name: 'CUPS PER DAY'
+      image: 'images/icons/coffee.png'
+      count: '2'
+
+    - name: 'SITES BUILT'
+      image: 'images/icons/web-development.png'
+      count: '25'
+
+    - name: 'USELESS ROW OF ICONS'
+      image: 'images/icons/happy.png'
+      count: '1'
+
+############################# portfolio ################################
+portfolio:
+  enable: true
+  title: 'MY WORK'
+  portfolio_list:
+    - name: Author by Humana
+      image: 'images/portfolio/author.png'
+      url: https://authorbyhumana.com
+      description: I joined the Author team in May 2020, just after I finished my college finals. Author launched its first plan on January 1st of 2021. My first 7 months at the company were often stressful because we had to launch two full websites, one the public facing authorbyhumana.com and the other is the member portal at my.authorbyhumana.com. Our sites are developed with a member centric approach. My role in the months leading up to the launch consisted of developing the majority of our base components that are shared between our two sites in a React based node package. Our public facing site uses React Gatsby, the static site generator for react. And on the member portal side we use React with create-react-app.
+
+    - name: Nikki-O crochet
+      image: 'images/portfolio/nikkio.png'
+      url: https://nikkiocrochet.com
+      description: A friend of mine from college wanted to get off of Etsy and onto her own website to sell her crochet work. I made her a site using Hugo, a custom theme, Snipcart, Github Actions, and Forestry. This was the first time I had worked with a marketplace SaaS and it was a fun learning experience.
+
+    - name: Creative Business Design v2
+      image: 'images/portfolio/cbd-v2.png'
+      url: https://cbdcompanies.com
+      description: CBD is my dad's company. When he wanted a new site to better fit his business needs, I used Hugo, Github (with Github Actions), and Forestry to make the current site. After making this site I fell in love with this tech stack for free sites with a CMS, so I wrote [this medium article](https://medium.com/@tylerjlawson2/best-tech-stack-for-small-static-sites-7b6e64eff3c1).
+
+    - name: My First Portfolio
+      image: 'images/portfolio/oldPortfolio.png'
+      url: https://tyler-lawson.com/portfolio-v1/
+      description: I made my first portfolio using mostly just SCSS and HTML. I wanted to gain experience making my own components and also wanted to keep the project relatively lightweight. If you'd like to see the code here is the [Github repo](https://github.com/tylerjlawson/portfolio-v1)
+
+    - name: The PLPT
+      image: 'images/portfolio/plpt.png'
+      url: https://thepulpit.github.io
+      description: I made this site in 2017 when a friend of mine expressed interest in making his first blog. After seeing some buzz about static site generators, I decided to checkout [Jekyll](https://jekyllrb.com/) for this project. I made mostly a custom theme and launched my first website using a static site generator.
+
+    - name: Visiting Dental Hygiene
+      image: 'images/portfolio/vdha.png'
+      url: https://visitingdentalhygiene.com/
+      description: This site was first made using a wordpress template in 2017 and was redone in 2019 to use [amp.dev](https://amp.dev/). I was particularly excited to test out this framework. For sites that are small and custom, it is lightweight and easy to use. You can see the [project repo here](https://github.com/visitingdentalhygiene/VDHAWebsite).
+
+    - name: Creative Business Design V1
+      image: 'images/portfolio/cbd.png'
+      description: Creative Business design was the final site that I did during my time at Getfused as an Intern.
+
+    - name: Private Client Underwriters
+      image: 'images/portfolio/privateClientU.png'
+      url: https://www.privateclientu.com/
+      description: This was the first site I ever styled and worked on. This was done during my first month at Getfused. I was given a mockup from a photoshop file and delivered the finished site by styling the site mostly from scratch.
+
+    - name: Wynn Casino
+      image: 'images/portfolio/wynn.png'
+      description: I made another site using CSS while at Getfused for what was supposed to be a construction project website for the Wynn Casino in Boston. The site never launched, but I am proud of the work nonetheless.
+
+    - name: Skipjack's
+      image: 'images/portfolio/skipjacks.png'
+      url: https://www.skipjacks.com/
+      description: This is a site I made while at Getfused. I had some fun making the animated header using CSS shapes as well.
