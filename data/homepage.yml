@@ -11,8 +11,8 @@ hero:
     - 'Dog Owner'
 
   # hero background image
-  bg_image: 'images/gus.jpg'
-  mobile_bg_image: 'images/background.jpg'
+  bg_image: 'images/gus_large.jpg'
+  mobile_bg_image: 'images/gus_small.jpg'
 
 ########################### About ##################################
 about:
