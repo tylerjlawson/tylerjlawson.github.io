@@ -1,0 +1,26 @@
+name: Deploy to GH Pages
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo and submodules (hugo theme)
+        uses: actions/checkout@v2
+        with:
+          submodules: true
+
+      - name: Build Hugo
+        uses: srt32/hugo-action@v0.0.3
+
+      - name: GitHub Pages deployment
+        uses: peaceiris/actions-gh-pages@v3.7.3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          disable_nojekyll: true

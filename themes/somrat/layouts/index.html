@@ -137,7 +137,11 @@
                 <p>{{ .content | markdownify | emojify }}</p>
                 {{ if .button.enable }}
                   {{ with .button }}
-                    <a href="{{ .link | absURL }}" target='_blank' class="button download-cv">
+                    <a
+                      href="{{ .link | absURL }}"
+                      target="_blank"
+                      class="button download-cv"
+                    >
                       {{ .label }} <i class="fa fa-download"></i
                     ></a>
                   {{ end }}
@@ -242,17 +246,19 @@
                 {{ $big_image := $image.Fill "780x500 jpg" }}
                 {{ $sm_image := $image.Fill "395x250 jpg" }}
                 <li>
-                  <p id="description-{{.name | urlize}}" class='hidden'>{{ .description | markdownify }}</p>
+                  <p id="description-{{ .name | urlize }}" class="hidden">
+                    {{ .description | markdownify }}
+                  </p>
                   <a
                     href="{{ .url }}"
                     data-largesrc="{{ $big_image.Permalink }}"
                     data-title="{{ .name }}"
-                    data-buttontext="{{ .buttontext }}"
+                    {{ if ne .url "" }}data-buttontext="SEE SITE"{{end}}
                   >
-                  <img
-                    src="{{ $sm_image.Permalink }}"
-                    alt="{{ .name }} image"
-                  />
+                    <img
+                      src="{{ $sm_image.Permalink }}"
+                      alt="{{ .name }} image"
+                    />
                   </a>
                 </li>
               {{ end }}
@@ -266,7 +272,7 @@
        End Portfolio
     =============================== -->
 
-  <div class="footer container text-center">
+  <div class="footer container text-center" id="contact">
     <ul class="footer-icons list-inline">
       {{ range $.Site.Params.social }}
         <li>
