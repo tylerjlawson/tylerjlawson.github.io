@@ -82,7 +82,18 @@
     {{ end }}
     {{ with .Site.Data.homepage.hero }}
       <div class="hero-image">
-        <img src="{{ .background_image | absURL }}" alt="background" />
+        {{ if ne .mobile_bg_image "" }}
+          <img
+            class="d-none d-md-block"
+            src="{{ .bg_image | absURL }}"
+            alt="background" /><img
+            class="d-md-none"
+            src="{{ .mobile_bg_image | absURL }}"
+            alt="background" />{{ else }}
+          <img
+            src="{{ .bg_image | absURL }}"
+            alt="background"
+        />{{ end }}
       </div>
       <div class="container">
         <div class="row content">
@@ -253,7 +264,7 @@
                     href="{{ .url }}"
                     data-largesrc="{{ $big_image.Permalink }}"
                     data-title="{{ .name }}"
-                    {{ if ne .url "" }}data-buttontext="SEE SITE"{{end}}
+                    data-buttontext="SEE SITE"
                   >
                     <img
                       src="{{ $sm_image.Permalink }}"

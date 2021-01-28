@@ -11,21 +11,15 @@ hero:
     - 'Dog Owner'
 
   # hero background image
-  background_image: 'images/background.jpg'
-
-####################### Full screen navigation #####################
-fullscreen_nav:
-  enable: false
-  bg_image: 'images/backgrounds/full-nav-bg.jpg'
-  first_name: 'Tyler'
-  last_name: 'Lawson'
+  bg_image: 'images/profile.jpg'
+  mobile_bg_image: 'images/background.jpg'
 
 ########################### About ##################################
 about:
   enable: true
   image: 'images/profile.jpg'
   title: 'THIS IS ME'
-  content: Hi, thank you for taking a look around my site. I have redone this page with Hugo to make it easier to make changes and updates in the future. I am a huge fan of the [Hugo project](https://gohugo.io), so I like to use it in most of my 'side project' sites. I recently got my [first published theme for hugo](https://themes.gohugo.io/simple-resume). I have attempted to display a good first glimpse of what I have done in web development with this site. If you have any questions or just want to see more pictures of Gus (the dog), feel free to reach out on [LinkedIn, Github, or by email](#contact)!
+  content: Hi, thank you for taking a look around my site. I am using this page to show off the public websites that I have worked on over the past few years. My current work is focusing on creating websites to assist health insurance members with navigating their information over the internet. I have a passion for creating practical, simple, and intuitive websites that might help people. If you have any questions or just want to see more pictures of Gus (the dog), feel free to reach out on [LinkedIn, Github, or by email](#contact)!
   button:
     enable: true
     label: 'DOWNLOAD MY RESUME'
