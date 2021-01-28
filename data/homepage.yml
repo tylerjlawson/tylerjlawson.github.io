@@ -34,22 +34,22 @@ experience:
     - name: Software Engineer II
       company: Author By Humana
       duration: '2020-Current'
-      content: I work with React and Typescript to create member and public facing web applications. My responsibilities include developing base-level components, assisting teammates with utilizing components, and communicating with the design and product teams.
+      content: I work with React and Typescript to create member and public facing web applications. My responsibilities include developing base-level components, assisting teammates, and communicating with the design/product teams.
 
     - name: Software Engineering Intern
       company: Humana
       duration: '2019-2020'
-      content: During my time at Humana as an Intern I worked on a series of internal dashboards. I used Vue and Python Flask for my first dashboard. Then I used .Net Core with Vue for the second dashboard.
+      content: During my time as an intern at Humana I worked on a series of internal dashboards. I used Vue with Python Flask for my first dashboard. Then, I used .Net Core with Vue for the other.
 
     - name: Software Engineering Intern
       company: 2Is inc.
       duration: '2018'
-      content: I did not have a single intern project at 2Is, instead I worked on a series of different projects and tasks, which gave me a great breadth of experience that summer. I worked mostly with Common Lisp on new APIs and with refactoring legacy code. I also learned a lot about test driven development (by accident, but it still counts).
+      content: At 2Is I worked on a series of different projects and tasks, which gave me a diverse breadth of experience. I worked mostly with Common Lisp on new APIs and with refactoring legacy code. I also learned a lot about test driven development (by accident, but it still counts).
 
     - name: Front-End Engineering Intern
       company: Getfused
       duration: '2017'
-      content: This was my first exposure to web development. I showed up in May not having ever worked with HTML, CSS, or even Git. By the time I left that summer I had made 6 sites, started a Github, and found a new passion for web development.
+      content: This was my first exposure to web development. In May, I was completely new to HTML, CSS, and Git. By the time I left that summer I had made 6 sites, started a Github, and found a new passion for web development.
 
 ############################### Skill #################################
 skill:
