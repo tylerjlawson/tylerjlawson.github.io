@@ -10,7 +10,6 @@
 	display: inline-block;
 	margin: 10px 5px 0 5px;
 	vertical-align: top;
-	height: 250px;
 }
 
 .og-grid li > a,
@@ -18,7 +17,8 @@
 	border: none;
 	outline: none;
 	display: block;
-	position: relative;
+  position: relative;
+  max-width: 100%;
 }
 
 .og-grid li.og-expanded > a::after {
