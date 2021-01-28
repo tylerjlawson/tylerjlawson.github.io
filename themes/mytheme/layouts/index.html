@@ -43,16 +43,16 @@
             <nav>
               <ul class="mobile-menu-list">
                 {{ range .Site.Menus.main }}
-                  <li class="hvr-shutter-out-vertical mobile-menu-item 1">
+                  <li class="mobile-menu-item 1 mx-auto">
                     <a href="{{ .URL }}">{{ .Name }}</a>
                   </li>
                 {{ end }}
               </ul>
-              <ul class="mobile-menu-icons list-inline">
+              <ul class="mobile-menu-icons list-inline mx-auto">
                 {{ range .Site.Params.social }}
                   <li>
                     <a href="{{ .link | safeURL }}"
-                      ><i class="fab {{ .icon }}"></i
+                      ><i class="fab {{ .icon }} fa-2x"></i
                     ></a>
                   </li>
                 {{ end }}

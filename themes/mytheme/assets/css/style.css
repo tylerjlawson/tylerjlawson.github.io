@@ -753,7 +753,7 @@ input:checked + label span:last-child {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
+  width: fit-content;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
@@ -846,8 +846,9 @@ input:checked + label span:last-child {
 
 .menu-slider ul {
   list-style: none;
-  padding: 17px;
-  margin-bottom: 0;
+  padding: 0 17px;
+  margin: 7px 0;
+  text-align: center;
 }
 
 .menu-slider li {
@@ -855,8 +856,8 @@ input:checked + label span:last-child {
 }
 
 .menu-slider li a {
-  font-size: 18px;
-  font-weight: 400;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 /*--------------------------------
