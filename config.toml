@@ -77,6 +77,10 @@ link = "https://www.linkedin.com/in/tyler-lawson-3a370b137/"
 icon = "fas fa-envelope"
 link = "mailto:tylerjlawson2@gmail.com"
 
+[[params.social]]
+icon = "fab fa-medium"
+link = "https://medium.com/@tylerjlawson2"
+
 contentDir = "content/english"
 weight = 1
 home = "Home"

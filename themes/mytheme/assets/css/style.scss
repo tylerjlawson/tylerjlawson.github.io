@@ -976,12 +976,11 @@ ul.experience-chart {
   }
 }
 .footer-icons {
-  display: inline-flex;
-  flex-wrap: wrap;
-  width: 210px;
-  justify-content: space-between;
-  align-items: center;
+  display: flex;
+  width: fit-content;
+  margin: auto;
   margin-top: 15px;
+
   div {
     display: inline-block;
   }
@@ -989,6 +988,7 @@ ul.experience-chart {
     text-decoration: none;
     color: #313131;
     font-size: 17px;
+    margin: 0 8px;
   }
   .fa {
     transition: all 0.3s;

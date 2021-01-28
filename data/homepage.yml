@@ -93,12 +93,12 @@ portfolio:
     - name: Author by Humana
       image: 'images/portfolio/author.png'
       url: https://authorbyhumana.com
-      description: I joined the Author team in May 2020, just after I finished my college finals. Author launched its first plan on January 1st of 2021. My first 7 months at the company were often stressful because we had to launch two full websites, one the public facing authorbyhumana.com and the other is the member portal at my.authorbyhumana.com. Our sites are developed with a member centric approach. My role in the months leading up to the launch consisted of developing the majority of our base components that are shared between our two sites in a React based node package. Our public facing site uses React Gatsby, the static site generator for react. And on the member portal side we use React with create-react-app.
+      description: I joined the Author team in May 2020, just after finishing my college finals. Our sites are developed with a member centric approach. My role in the months leading up to the launch consisted of developing the majority of our base components that are shared between our two sites in a React-based node package. Our public facing site uses React Gatsby, a static site generator. And on the member portal side we use React with create-react-app.
 
     - name: Nikki-O crochet
       image: 'images/portfolio/nikkio.png'
       url: https://nikkiocrochet.com
-      description: A friend of mine from college wanted to get off of Etsy and onto her own website to sell her crochet work. I made her a site using Hugo, a custom theme, Snipcart, Github Actions, and Forestry. This was the first time I had worked with a marketplace SaaS and it was a fun learning experience.
+      description: A friend of mine wanted to get off Etsy and onto her own website to sell her crochet work. I made her a site using Hugo, a custom theme, Snipcart, Github Actions, and Forestry. This was the first time I had worked with a marketplace SaaS and it was a fun learning experience.
 
     - name: Creative Business Design v2
       image: 'images/portfolio/cbd-v2.png'
@@ -113,27 +113,27 @@ portfolio:
     - name: The PLPT
       image: 'images/portfolio/plpt.png'
       url: https://thepulpit.github.io
-      description: I made this site in 2017 when a friend of mine expressed interest in making his first blog. After seeing some buzz about static site generators, I decided to checkout [Jekyll](https://jekyllrb.com/) for this project. I made mostly a custom theme and launched my first website using a static site generator.
+      description: I made this site in 2017 when a friend of mine expressed interest in making his first blog. After seeing some buzz about static site generators, I decided to checkout [Jekyll](https://jekyllrb.com/). I made mostly a custom theme and launched my first website using a static site generator.
 
     - name: Visiting Dental Hygiene
       image: 'images/portfolio/vdha.png'
       url: https://visitingdentalhygiene.com/
-      description: This site was first made using a wordpress template in 2017 and was redone in 2019 to use [amp.dev](https://amp.dev/). I was particularly excited to test out this framework. For sites that are small and custom, it is lightweight and easy to use. You can see the [project repo here](https://github.com/visitingdentalhygiene/VDHAWebsite).
+      description: This site was first made using a wordpress template in 2017 and was redone in 2019 to use [amp.dev](https://amp.dev/). I was particularly excited to test out this framework. For small sites, it is lightweight and easy to use. You can see the [project repo here](https://github.com/visitingdentalhygiene/VDHAWebsite).
 
     - name: Creative Business Design V1
       image: 'images/portfolio/cbd.png'
-      description: Creative Business design was the final site that I did during my time at Getfused as an Intern.
-
-    - name: Private Client Underwriters
-      image: 'images/portfolio/privateClientU.png'
-      url: https://www.privateclientu.com/
-      description: This was the first site I ever styled and worked on. This was done during my first month at Getfused. I was given a mockup from a photoshop file and delivered the finished site by styling the site mostly from scratch.
+      description: Creative Business design was the final site that I did during my time at Getfused as an Intern. This site is no longer live, but it was a great early experience with CSS.
 
     - name: Wynn Casino
       image: 'images/portfolio/wynn.png'
-      description: I made another site using CSS while at Getfused for what was supposed to be a construction project website for the Wynn Casino in Boston. The site never launched, but I am proud of the work nonetheless.
+      description: This was supposed to be a construction project website for the Wynn Casino in Boston. The site never launched, but I am proud of the work nonetheless.
 
     - name: Skipjack's
       image: 'images/portfolio/skipjacks.png'
       url: https://www.skipjacks.com/
       description: This is a site I made while at Getfused. I had some fun making the animated header using CSS shapes as well.
+
+    - name: Private Client Underwriters
+      image: 'images/portfolio/privateClientU.png'
+      url: https://www.privateclientu.com/
+      description: This was the first site I ever styled and worked on. This was done during my first month at Getfused. I was given a mockup from a Photoshop file and delivered the finished site by styling the site mostly from scratch.
