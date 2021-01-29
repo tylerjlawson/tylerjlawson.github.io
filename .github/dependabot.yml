@@ -7,3 +7,11 @@ updates:
       day: 'sunday'
     assignees:
       - 'tylerjlawson'
+
+  - package-ecosystem: 'npm'
+    directory: '/'
+    schedule:
+      interval: 'weekly'
+      day: 'sunday'
+    assignees:
+      - 'tylerjlawson'

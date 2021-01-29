@@ -16,11 +16,6 @@ jobs:
         with:
           submodules: true
 
-      - name: Install node dependencies
-        uses: borales/actions-yarn@v2.3.0
-        with:
-          cmd: install
-
       - name: Build Hugo
         uses: srt32/hugo-action@v0.0.3
 
