@@ -1,0 +1,3 @@
+[submodule "themes/port-hugo"]
+	path = themes/port-hugo
+	url = git@github.com:tylerjlawson/port-hugo.git
