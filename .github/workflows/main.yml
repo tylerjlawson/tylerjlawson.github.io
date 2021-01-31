@@ -8,6 +8,7 @@ on:
 
 jobs:
   deploy:
+    environment: dependabot
     runs-on: ubuntu-latest
 
     steps:
@@ -16,11 +17,9 @@ jobs:
         with:
           submodules: true
 
-      - run: echo ${{ secrets.TOKEN }}
-
       - uses: ahmadnassri/action-dependabot-auto-merge@v2
         with:
-          github-token: ${{ secrets.TOKEN }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build Hugo
         uses: srt32/hugo-action@v0.0.3
