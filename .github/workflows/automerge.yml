@@ -1,14 +1,11 @@
-name: Deploy to GH Pages
-
+name: Automerge dependabot
 on:
-  push:
+  pull_request:
     branches: [master]
 
 jobs:
-  deploy:
-    environment: dependabot
+  build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repo and submodules (hugo theme)
         uses: actions/checkout@v2
@@ -18,8 +15,6 @@ jobs:
       - name: Build Hugo
         uses: srt32/hugo-action@v0.0.3
 
-      - name: GitHub Pages deployment
-        uses: peaceiris/actions-gh-pages@v3.7.3
+      - uses: ahmadnassri/action-dependabot-auto-merge@v2
         with:
-          github_token: ${{ secrets.TOKEN }}
-          disable_nojekyll: true
+          github-token: ${{ secrets.TOKEN }}
