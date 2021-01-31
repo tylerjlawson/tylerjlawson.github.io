@@ -11,13 +11,14 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Repo Lockdown 
-        uses: dessant/repo-lockdown@v2.0.0
-        
       - name: Checkout repo and submodules (hugo theme)
         uses: actions/checkout@v2
         with:
           submodules: true
+        
+      - uses: ahmadnassri/action-dependabot-auto-merge@v2
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build Hugo
         uses: srt32/hugo-action@v0.0.3
