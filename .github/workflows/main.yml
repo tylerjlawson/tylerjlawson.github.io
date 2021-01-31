@@ -18,6 +18,7 @@ jobs:
           submodules: true
 
       - uses: ahmadnassri/action-dependabot-auto-merge@v2
+        if: ${{ github.event_name == 'pull_request' }}
         with:
           github-token: ${{ secrets.TOKEN }}
 
