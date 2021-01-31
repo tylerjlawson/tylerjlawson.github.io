@@ -16,6 +16,10 @@ jobs:
         with:
           submodules: true
 
+      - uses: ahmadnassri/action-dependabot-auto-merge@v2
+        with:
+          github-token: ${{ secrets.TOKEN }}
+
       - name: Build Hugo
         uses: srt32/hugo-action@v0.0.3
 
