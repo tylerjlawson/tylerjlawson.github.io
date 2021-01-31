@@ -19,7 +19,7 @@ jobs:
 
       - uses: ahmadnassri/action-dependabot-auto-merge@v2
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.DEPENDABOT_TOKEN }}
 
       - name: Build Hugo
         uses: srt32/hugo-action@v0.0.3
