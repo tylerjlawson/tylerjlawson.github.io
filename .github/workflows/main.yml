@@ -11,6 +11,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Repo Lockdown 
+        uses: dessant/repo-lockdown@v2.0.0
+        
       - name: Checkout repo and submodules (hugo theme)
         uses: actions/checkout@v2
         with:
