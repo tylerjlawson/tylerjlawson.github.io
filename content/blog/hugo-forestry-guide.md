@@ -1,6 +1,6 @@
 +++
 title = "Hugo With Forestry Setup Guide"
-description = "lorem ipsum"
+description = "Full walkthrough for setting up Hugo static sites with Forestry, the free CMS."
 date = "2021-03-21"
 +++
 
