@@ -4,7 +4,7 @@ description = "lorem ipsum"
 date = "2021-03-21"
 +++
 
-The easiest way I have found to setup a static site with a CMS has been to use [Forestry.io](https://forestry.io/), [Github ](https://github.com), & [Hugo](https://gohugo.io/). This stack is free, easy to use, and efficient.
+The easiest way I have found to setup a static site with a CMS has been to use [Forestry.io](https://forestry.io/), [Github](https://github.com), & [Hugo](https://gohugo.io/). This stack is free, easy to use, and efficient.
 
 You will new to [install hugo](https://gohugo.io/getting-started/installing/) for this demo.
 
@@ -14,7 +14,7 @@ _TLDR_ If you want to skip some of the setup [just fork my starter project](http
 
 To start, [make a new repository](https://github.com/new) on github. You will need to name the repo &lt;your username&gt;.github.io to take advantage of free Github Pages hosting. After creating your repo, you will need to clone it and create your empty hugo site. Run the following in your terminal:
 
-```
+```sh
 git clone git@github.com:[your github username]/[your new repo name].git
 cd [your repo name]
 hugo new site . --force
@@ -29,7 +29,7 @@ For the sake of this demo I will use the [zen theme](https://themes.gohugo.io/hu
 
 To add zen, we will return to our terminal and execute the following:
 
-```
+```sh
 git clone --depth=1 https://github.com/frjo/hugo-theme-zen.git themes/zen
 rm -rf themes/zen/.git
 echo node_modules >> .gitignore
@@ -50,7 +50,7 @@ Next you will need to open the file `themes/zen/layouts/_default/baseof.html` an
 
 After making this change, run the following:
 
-```
+```sh
 git add .
 git commit -m "added zen theme"
 git push
@@ -58,7 +58,7 @@ git push
 
 **Step Three: Add Gitlab CI/CD**
 
-```
+```sh
 mkdir -p .github/workflows
 curl https://gist.githubusercontent.com/tylerjlawson/d9cac21702b63b2ec119d3d7b6dc29c3/raw/6eb404ff10f09c475af9325b0d9fd9b42c627016/hugo_deploy.yml > .github/workflows/main.yml
 git add .
@@ -116,7 +116,7 @@ _TLDR_ If you want to see the code difference between the zen theme and the new 
 
 You will start with removing the old theme and adding the new one in the terminal:
 
-```
+```sh
 rm -rf themes/zen/
 git clone --depth=1 https://github.com/mitrichius/hugo-theme-anubis.git themes/anubis
 rm -rf themes/anubis/.git
@@ -126,7 +126,7 @@ git commit -m "replaced theme directory"
 
 Remove old build and config. Replace with new config from anubis.
 
-```
+```sh
 rm config.yaml docs
 cp themes/anubis/exampleSite/config.toml .
 cp -r themes/anubis/exampleSite/content/homepage/ content/homepage
