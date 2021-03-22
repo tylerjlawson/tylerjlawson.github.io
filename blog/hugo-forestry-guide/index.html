@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html><head>
+  <meta charset="utf-8" />
+  <title>Hugo With Forestry Setup Guide</title>
+
+  <!-- mobile responsive meta -->
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1"
+  />
+  <meta
+    name="description"
+    content="lorem ipsum"
+  />
+  
+    <meta name="author" content="Tyler Lawson" />
+  
+
+  <!-- plugins -->
+  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.0/css/hover-min.css" />
+  
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900&amp;display=swap" />
+  
+    <link rel="stylesheet" href="https://tyler-lawson.com/plugins/text-animation/text-animation.css" />
+  
+    <link rel="stylesheet" href="https://tyler-lawson.com/plugins/hugrid/hugrid.css" />
+  
+
+  <!-- Main Stylesheet -->
+
+  
+  <link rel="stylesheet" href="https://tyler-lawson.com/css/style.min.css" media="screen" />
+
+  <!--Favicon-->
+
+  
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/favicon/manifest.json" />
+    <link
+      rel="mask-icon"
+      href="/favicon/safari-pinned-tab.svg"
+      color="#374a67"
+    />
+    <meta
+      name="theme-color"
+      content="#fff"
+    />
+    
+</head>
+<body>
+  <!-- preloader start -->
+  <div class="preloader">
+    
+      <img src="https://tyler-lawson.com/images/preloader.gif" alt="preloader" />
+    
+  </div>
+  <!-- preloader end -->
+
+
+  <span class="menu-dark"></span>
+  <section class="menu menu-fix" id="menu">
+  <nav>
+    
+    <div class="menu-container">
+      <div class="desktop-menu-logo">
+        <a href="/"
+          ><img
+            class="img-fluid"
+            src="https://tyler-lawson.com/images/logo.svg"
+            alt="Tyler Lawson"
+            id="desktop-logo"
+        /></a>
+      </div>
+      <ul class="desktop-menu list-inline mb-0" id="desktop-menu">
+        
+          <li class="menu-item hvr-underline-from-left 1">
+            <a href="/#header">Home</a>
+          </li>
+        
+          <li class="menu-item hvr-underline-from-left 2">
+            <a href="/#about">About me</a>
+          </li>
+        
+          <li class="menu-item hvr-underline-from-left 3">
+            <a href="/#portfolio">Portfolio</a>
+          </li>
+        
+          <li class="menu-item hvr-underline-from-left 4">
+            <a href="/blog">Blog</a>
+          </li>
+        
+      </ul>
+      
+      <div class="mobile-menu">
+        <a class="menu-link">
+          <div class="mobile-menu-nav">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </a>
+        <div class="mobile-menu-logo">
+          <a href="/"
+            ><img
+              class="img-fluid"
+              src="https://tyler-lawson.com/images/logo-dark.svg"
+              alt="Tyler Lawson"
+          /></a>
+        </div>
+        <div class="menu-slider">
+          <nav>
+            <ul class="mobile-menu-list">
+              
+                <li class="mobile-menu-item 1 mx-auto">
+                  <a href="/#header">Home</a>
+                </li>
+              
+                <li class="mobile-menu-item 1 mx-auto">
+                  <a href="/#about">About me</a>
+                </li>
+              
+                <li class="mobile-menu-item 1 mx-auto">
+                  <a href="/#portfolio">Portfolio</a>
+                </li>
+              
+                <li class="mobile-menu-item 1 mx-auto">
+                  <a href="/blog">Blog</a>
+                </li>
+              
+            </ul>
+            <ul class="mobile-menu-icons list-inline mx-auto">
+              
+                <li>
+                  <a href="https://github.com/tylerjlawson"
+                    ><i class="fab fab fa-github fa-2x"></i
+                  ></a>
+                </li>
+              
+                <li>
+                  <a href="https://www.linkedin.com/in/tyler-lawson-3a370b137/"
+                    ><i class="fab fab fa-linkedin fa-2x"></i
+                  ></a>
+                </li>
+              
+                <li>
+                  <a href="mailto:tylerjlawson2@gmail.com"
+                    ><i class="fab fas fa-envelope fa-2x"></i
+                  ></a>
+                </li>
+              
+                <li>
+                  <a href="https://medium.com/@tylerjlawson2"
+                    ><i class="fab fab fa-medium fa-2x"></i
+                  ></a>
+                </li>
+              
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </nav>
+</section>
+
+
+  <div class="under-menu container">
+    <h1>Hugo With Forestry Setup Guide</h1>
+    <span class="date">Posted on: 3/21/2021</span>
+    <div class="body">
+        <p>The easiest way I have found to setup a static site with a CMS has been to use <a href="https://forestry.io/">Forestry.io</a>, <a href="https://github.com">Github</a>, &amp; <a href="https://gohugo.io/">Hugo</a>. This stack is free, easy to use, and efficient.</p>
+<p>You will new to <a href="https://gohugo.io/getting-started/installing/">install hugo</a> for this demo.</p>
+<p><strong>Step One: Create A Repo and Add Hugo</strong></p>
+<p><em>TLDR</em> If you want to skip some of the setup <a href="https://github.com/tylerjlawson/hugo-forestry-starter">just fork my starter project</a> and jump to step 4.</p>
+<p>To start, <a href="https://github.com/new">make a new repository</a> on github. You will need to name the repo &lt;your username&gt;.github.io to take advantage of free Github Pages hosting. After creating your repo, you will need to clone it and create your empty hugo site. Run the following in your terminal:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">git clone git@github.com:<span style="color:#f92672">[</span>your github username<span style="color:#f92672">]</span>/<span style="color:#f92672">[</span>your new repo name<span style="color:#f92672">]</span>.git
+cd <span style="color:#f92672">[</span>your repo name<span style="color:#f92672">]</span>
+hugo new site . --force
+git add .
+git commit -m <span style="color:#e6db74">&#34;first commit with empty hugo project&#34;</span>
+git push origin -u master
+</code></pre></div><p><strong>Step Two: Add a Hugo Theme</strong></p>
+<p>For the sake of this demo I will use the <a href="https://themes.gohugo.io/hugo-theme-zen/">zen theme</a>. The theme will decide how you need to setup the forestry fields properly. Each hugo theme has its own <code>exampleSite</code> directory and the zen theme <code>exampleSite</code> <a href="https://github.com/frjo/hugo-theme-zen/tree/main/exampleSite">can be seen here</a>. This directory serves as an example for how to build your site, so I will refer the one from the zen theme when making this demo and later help you through replacing the theme. This will hopefully give you a good idea for how to setup hugo with forestry with <a href="https://themes.gohugo.io">any theme</a> you wish to use.</p>
+<p>To add zen, we will return to our terminal and execute the following:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">git clone --depth<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span> https://github.com/frjo/hugo-theme-zen.git themes/zen
+rm -rf themes/zen/.git
+echo node_modules &gt;&gt; .gitignore
+echo -e <span style="color:#e6db74">&#34;+++\ntitle = \&#34;Home\&#34;\n+++&#34;</span> &gt;&gt; content/_index.md
+rm config.toml
+cp themes/zen/exampleSite/config.yaml .
+</code></pre></div><p>Next you will need to open the file <code>themes/zen/layouts/_default/baseof.html</code> and paste the following code just above the close of the head tag (<code>&lt;/head&gt;</code>). To edit this, it would be helpful to have some sort of text editor installed like Sublime, VSCode, or Notepad++.</p>
+<!-- raw HTML omitted -->
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">{{ with .Params.forestry_instant_preview_id }}
+  {{- safeHTML (printf &#34;&lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">property</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;forestry_instant_preview_id&#39;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;%s&#39;</span>&gt;&#34; .) -}}
+{{ end -}}
+</code></pre></div><!-- raw HTML omitted -->
+<p>After making this change, run the following:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">git add .
+git commit -m <span style="color:#e6db74">&#34;added zen theme&#34;</span>
+git push
+</code></pre></div><p><strong>Step Three: Add Gitlab CI/CD</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">mkdir -p .github/workflows
+curl https://gist.githubusercontent.com/tylerjlawson/d9cac21702b63b2ec119d3d7b6dc29c3/raw/6eb404ff10f09c475af9325b0d9fd9b42c627016/hugo_deploy.yml &gt; .github/workflows/main.yml
+git add .
+git commit -m <span style="color:#e6db74">&#34;added github actions for building and deploying hugo site&#34;</span>
+git push
+</code></pre></div><p><strong>Step Four: Setup Forestry</strong></p>
+<p><a href="https://app.forestry.io/signup">Create an account for Forestry.io</a>. Press Add Site &gt; Hugo &gt; Github &gt; Select your repository from the dropdown. If you cloned the starter project from the TLDR, you can skip to the next step now.</p>
+<p>For this example we will have a home page, about page, and a blog page. To create a template for our blog posts, press <code>front matter</code> on the sidebar. Then press <code>add template</code> in the top right &gt; create new blank template &gt; enter <code>Blog post</code> as the name &gt; create template. This is where the theme will start to matter, different themes have different names for the front matter, so if you are using another theme, look at a post in <code>exampleSite/content/[some blog subdir (documentation for zen)]</code>. Here you will see front matter like this:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-md" data-lang="md">+++
+date = 2021-03-17T01:22:04Z
+title = &#34;Some Super Sweet Stuff&#34;
+author = &#34;John Doe&#34;
++++
+</code></pre></div><p>These are the fields that we need to add to our Forestry blog template. So we will start by pressing add field &gt; text field &gt; enter author for the label (it will autofill the name) then press done. Repeat this same process for the title. For the date field, select date field instead of text field and then I like to select setting &lsquo;now&rsquo; as default from the default tab when creating this field.</p>
+<p>Now, add another template named &lsquo;Page&rsquo; and only provide it the title field.</p>
+<p>I&rsquo;d encourage you to add descriptions and play around with the different field configurations to get comfortable with Forestry, but this will give you all you need to setup a basic blog post.</p>
+<p>Now edit the section that was already there, &lsquo;Pages&rsquo; and select your &lsquo;Page&rsquo; template from the dropdown for available templates. You will also want to select &lsquo;documents&rsquo; from the &lsquo;Content Type&rsquo; dropdown.</p>
+<p>Create one last section that will be a Document, with the label &lsquo;Config&rsquo; and path <code>config.yaml</code>.</p>
+<p>To setup the CMS for editing, press <code>Finish setup process</code> in the sidebar then &gt; configure sidebar. Press <code>Add Section</code> where we will add our blog page as its own sidebar section. Press <code>Directory</code> &gt; enter &lsquo;Blog&rsquo; as the label &gt; content/blog as the content directory &gt; then select &lsquo;Blog post&rsquo; from the dropdown at the bottom for available templates &gt; select documents from the content type dropdown &gt; press done.</p>
+<p><strong>Step Five: Finish Setup and Start the Preview Server</strong></p>
+<p>Now go back to <code>Finish setup process</code> and you can press mark as done and complete the setup process prompt for now. Then navigate to settings &gt; previews &gt; start preview. At this point, if you used the starter project you will already have some pages you can change around then move to the next step.</p>
+<p>You will notice we already added the homepage. You can edit that by selecting it. To add our About page we will select Pages from the sidebar &gt; create new &gt; enter About for title &gt; some text to show on your about us page in the body on the right.</p>
+<p>To add a blog post you can navigate to the blog in the sidebar &gt; create a new post &gt; fill out the fields &gt; turn draft mode off in the top right to publish it.</p>
+<p><strong>Step Five: Configure Github Pages</strong></p>
+<p>Now you will need to go back to <a href="https://github.com">github.com</a>, navigate to your repo at <code>https://github.com/[your username]/[your repo name]/settings</code> and scroll to where it says <code>Github Pages</code>. Where it says <code>source</code> you want to select the <code>master</code> branch and then to the right of that you will select <code>docs</code> in the folder dropdown. Then press <code>save</code>.</p>
+<p><strong>All Done!</strong></p>
+<p>Congratulations, now that you have set everything up, you should see your site live at <!-- raw HTML omitted -->.github.io in the next few minutes.</p>
+<p>To change more of the values on your site navigate to the config tab in the left bar to edit your site title, url, etc.</p>
+<p><strong>If you want to change the theme</strong></p>
+<p><em>TLDR</em> If you want to see the code difference between the zen theme and the new anubis theme <a href="https://github.com/tylerjlawson/hugo-forestry-starter/compare/master...changeTheme">click here</a>.</p>
+<p>You will start with removing the old theme and adding the new one in the terminal:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">rm -rf themes/zen/
+git clone --depth<span style="color:#f92672">=</span><span style="color:#ae81ff">1</span> https://github.com/mitrichius/hugo-theme-anubis.git themes/anubis
+rm -rf themes/anubis/.git
+git add .
+git commit -m <span style="color:#e6db74">&#34;replaced theme directory&#34;</span>
+</code></pre></div><p>Remove old build and config. Replace with new config from anubis.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">rm config.yaml docs
+cp themes/anubis/exampleSite/config.toml .
+cp -r themes/anubis/exampleSite/content/homepage/ content/homepage
+</code></pre></div><p>Open the <code>config.toml</code> in your text editor and change the path from <code>posts</code> to <code>blog</code> since we created the <code>blog</code> folder already for our blog posts.</p>
+<p>Now that we are using a new theme, we will need to update the forestry fields to match. You can upload the fields and templates on forestry.io if you wish, but since I walked through how to do that earlier in this demo we will take a look at editing the forestry configuration files in <code>.forestry</code> from your text editor.</p>
+<p>Navigate to <code>.forestry/settings.yml</code> and we will first update the config section. Since the config from anubis is <code>config.toml</code> but the previous theme used <code>yaml</code> lets change the path value:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-diff" data-lang="diff"><span style="color:#f92672">-    path: config.yaml
+</span><span style="color:#f92672"></span><span style="color:#a6e22e">+    path: config.toml
+</span></code></pre></div><p>You will need to also update the fields for the page and blog post template. You can see their possible front matters in <code>themes/anubis/exampleSite/content/about.md</code> &amp; <code>themes/anubis/exampleSite/content/about-subpage.md</code>. For the blog post look at <code>themes/anubis/exampleSite/content/post/emoji-support.md</code> for the front matter a blog post can have.</p>
+<p>You will need to edit the head at <code>themes/anubis/layout/partials/head.html</code>. Add this to the end of that file:</p>
+<!-- raw HTML omitted -->
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">{{ with .Params.forestry_instant_preview_id }}
+  {{- safeHTML (printf &#34;&lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">property</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;forestry_instant_preview_id&#39;</span> <span style="color:#a6e22e">content</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;%s&#39;</span>&gt;&#34; .) -}}
+{{ end -}}
+</code></pre></div><!-- raw HTML omitted -->
+<p>To see all of the changes mentioned above: <a href="https://github.com/tylerjlawson/hugo-forestry-starter/compare/master...changeTheme">click here</a>.</p>
+<p><strong>Wrapping up</strong></p>
+<p>I hope this guide has served as a helpful tool for learning how to configure Hugo, Forestry, &amp; Github with different Hugo themes. Each theme has its own nuances, so the configuration difficulties come in matching the setup in Forestry with the <code>exampleSite</code> directory.</p>
+<p>This project is all available at <a href="https://github.com/tylerjlawson/hugo-forestry-starter">tylerjlawson/hugo-forestry-starter</a>, so if you have any questions or want to make any enhancements to this guide, feel free to reach out through the issues tab or make a pull request. Thanks!</p>
+
+    </div>
+  </div>
+
+  <div class="footer container text-center" id="contact">
+  <ul class="footer-icons list-inline">
+    
+      <li>
+        <a href="https://github.com/tylerjlawson" target="_blank"
+          ><i class="fab fa-github footer-icon fa-3x"></i
+        ></a>
+      </li>
+    
+      <li>
+        <a href="https://www.linkedin.com/in/tyler-lawson-3a370b137/" target="_blank"
+          ><i class="fab fa-linkedin footer-icon fa-3x"></i
+        ></a>
+      </li>
+    
+      <li>
+        <a href="mailto:tylerjlawson2@gmail.com" target="_blank"
+          ><i class="fas fa-envelope footer-icon fa-3x"></i
+        ></a>
+      </li>
+    
+      <li>
+        <a href="https://medium.com/@tylerjlawson2" target="_blank"
+          ><i class="fab fa-medium footer-icon fa-3x"></i
+        ></a>
+      </li>
+    
+  </ul>
+  <div class="credit">
+    Copyright Tyler Lawson ©
+    <span id="current-year"></span>
+  </div>
+</div>
+
+<!-- JS Plugins -->
+
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+
+  <script src="https://tyler-lawson.com/plugins/text-animation/text-animation.js"></script>
+
+  <script src="https://tyler-lawson.com/plugins/hugrid/hugrid.min.js"></script>
+
+
+<!-- Main Scripts -->
+
+<script src="https://tyler-lawson.com/js/script.min.js"></script>
+
+<script src="https://tyler-lawson.com/js/hugrid.custom.min.js"></script>
+</body>
+</html>

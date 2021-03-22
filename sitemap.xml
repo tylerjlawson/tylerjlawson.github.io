@@ -3,15 +3,26 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://tyler-lawson.com/blog/</loc>
+    <lastmod>2021-03-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tyler-lawson.com/blog/hugo-forestry-guide/</loc>
+    <lastmod>2021-03-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://tyler-lawson.com/</loc>
+    <lastmod>2021-03-21T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://tyler-lawson.com/categories/</loc>
   </url>
   
   <url>
     <loc>https://tyler-lawson.com/tags/</loc>
-  </url>
-  
-  <url>
-    <loc>https://tyler-lawson.com/</loc>
   </url>
   
 </urlset>
