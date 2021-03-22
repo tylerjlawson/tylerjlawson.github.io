@@ -9,7 +9,7 @@ The easiest way I have found to setup a static site with a CMS has been to use [
 
 You will new to [install hugo](https://gohugo.io/getting-started/installing/) for this demo.
 
-**Step One: Create A Repo and Add Hugo**
+## Step One: Create A Repo and Add Hugo
 
 _TLDR_ If you want to skip some of the setup [just fork my starter project](https://github.com/tylerjlawson/hugo-forestry-starter) and jump to step 4.
 
@@ -24,7 +24,7 @@ git commit -m "first commit with empty hugo project"
 git push origin -u master
 ```
 
-**Step Two: Add a Hugo Theme**
+## Step Two: Add a Hugo Theme
 
 For the sake of this demo I will use the [zen theme](https://themes.gohugo.io/hugo-theme-zen/). The theme will decide how you need to setup the forestry fields properly. Each hugo theme has its own `exampleSite` directory and the zen theme `exampleSite` [can be seen here](https://github.com/frjo/hugo-theme-zen/tree/main/exampleSite). This directory serves as an example for how to build your site, so I will refer the one from the zen theme when making this demo and later help you through replacing the theme. This will hopefully give you a good idea for how to setup hugo with forestry with [any theme](https://themes.gohugo.io) you wish to use.
 
@@ -57,7 +57,7 @@ git commit -m "added zen theme"
 git push
 ```
 
-**Step Three: Add Gitlab CI/CD**
+## Step Three: Add Gitlab CI/CD
 
 ```sh
 mkdir -p .github/workflows
@@ -67,7 +67,7 @@ git commit -m "added github actions for building and deploying hugo site"
 git push
 ```
 
-**Step Four: Setup Forestry**
+## Step Four: Setup Forestry
 
 [Create an account for Forestry.io](https://app.forestry.io/signup). Press Add Site > Hugo > Github > Select your repository from the dropdown. If you cloned the starter project from the TLDR, you can skip to the next step now.
 
@@ -93,7 +93,7 @@ Create one last section that will be a Document, with the label 'Config' and pat
 
 To setup the CMS for editing, press `Finish setup process` in the sidebar then > configure sidebar. Press `Add Section` where we will add our blog page as its own sidebar section. Press `Directory` > enter 'Blog' as the label > content/blog as the content directory > then select 'Blog post' from the dropdown at the bottom for available templates > select documents from the content type dropdown > press done.
 
-**Step Five: Finish Setup and Start the Preview Server**
+## Step Five: Finish Setup and Start the Preview Server
 
 Now go back to `Finish setup process` and you can press mark as done and complete the setup process prompt for now. Then navigate to settings > previews > start preview. At this point, if you used the starter project you will already have some pages you can change around then move to the next step.
 
@@ -101,17 +101,17 @@ You will notice we already added the homepage. You can edit that by selecting it
 
 To add a blog post you can navigate to the blog in the sidebar > create a new post > fill out the fields > turn draft mode off in the top right to publish it.
 
-**Step Five: Configure Github Pages**
+## Step Five: Configure Github Pages
 
 Now you will need to go back to [github.com](https://github.com), navigate to your repo at `https://github.com/[your username]/[your repo name]/settings` and scroll to where it says `Github Pages`. Where it says `source` you want to select the `master` branch and then to the right of that you will select `docs` in the folder dropdown. Then press `save`.
 
-**All Done!**
+## All Done!
 
 Congratulations, now that you have set everything up, you should see your site live at <your username>.github.io in the next few minutes.
 
 To change more of the values on your site navigate to the config tab in the left bar to edit your site title, url, etc.
 
-**If you want to change the theme**
+## If you want to change the theme
 
 _TLDR_ If you want to see the code difference between the zen theme and the new anubis theme [click here](https://github.com/tylerjlawson/hugo-forestry-starter/compare/master...changeTheme).
 
@@ -158,7 +158,7 @@ You will need to edit the head at `themes/anubis/layout/partials/head.html`. Add
 
 To see all of the changes mentioned above: [click here](https://github.com/tylerjlawson/hugo-forestry-starter/compare/master...changeTheme).
 
-**Wrapping up**
+## Wrapping up
 
 I hope this guide has served as a helpful tool for learning how to configure Hugo, Forestry, & Github with different Hugo themes. Each theme has its own nuances, so the configuration difficulties come in matching the setup in Forestry with the `exampleSite` directory.
 
