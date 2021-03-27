@@ -27,6 +27,6 @@ When you provide a city like this image, the app will perform a google maps sear
 
 Eventually, I would like to add to the functionality of the app. I'd be thrilled if others were to also start using the app and then make feature/functionality suggestions & requests [on Github](https://github.com/tylerjlawson/sprt.dev/issues).
 
-## Wrapping up
+## Wrapping Up
 
 I had a lot of fun getting myself more familiar with Express JS while. I also loved making something that I will use everyday in the future to check when my favorite teams play. If you appreciate sprt.dev or are just feeling nice, I'd really appreciate a start [on my Github repo](https://github.com/tylerjlawson/sprt.dev). And if you ever watch sports, start `curl`ing [sprt.dev](https://sprt.dev)!
