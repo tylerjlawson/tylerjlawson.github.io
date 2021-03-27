@@ -5,7 +5,16 @@
     <link>https://tyler-lawson.com/blog/</link>
     <description>Recent content in Posts on Tyler Lawson</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 21 Mar 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://tyler-lawson.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 27 Mar 2021 18:31:35 +0000</lastBuildDate><atom:link href="https://tyler-lawson.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Terminal Friendly Sport Schedule</title>
+      <link>https://tyler-lawson.com/blog/sprt-dot-dev/</link>
+      <pubDate>Sat, 27 Mar 2021 18:31:35 +0000</pubDate>
+      
+      <guid>https://tyler-lawson.com/blog/sprt-dot-dev/</guid>
+      <description>A few years ago I found a site/service called wttr.in that provides a terminal friendly weather report based on your location, or a location that you provide. For years, I had wanted to replicate this type of project for a simple view of the upcoming professional sports schedule, given a city. About a month ago I had a separate idea that I wanted to make an express app to play around with it after using it to make my team&amp;rsquo;s technical interview test at work.</description>
+    </item>
+    
     <item>
       <title>Hugo With Forestry Setup Guide</title>
       <link>https://tyler-lawson.com/blog/hugo-forestry-guide/</link>
