@@ -62,6 +62,7 @@ copyright = "Copyright Tyler Lawson &copy;"
 # Meta data
 description = "Personal Portfolio"
 author = "Tyler Lawson"
+google_analytics = "G-ZMLVM62DMD"
 
 [params.special_favicon]
 apple_touch = "/favicon/apple-touch-icon.png"
