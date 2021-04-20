@@ -102,7 +102,6 @@ portfolio:
 
     - name: Nikki-O crochet
       image: 'images/portfolio/nikkio.png'
-      url: https://nikkiocrochet.com
       description: A friend of mine wanted to get off Etsy and onto her own website to sell her crochet work. I made her a site using Hugo, a custom theme, Snipcart, Github Actions, and Forestry. This was the first time I had worked with a marketplace SaaS and it was a fun learning experience.
 
     - name: Creative Business Design v2
@@ -112,7 +111,6 @@ portfolio:
 
     - name: My First Portfolio
       image: 'images/portfolio/oldPortfolio.png'
-      url: https://tyler-lawson.com/portfolio-v1/
       description: I made my first portfolio using mostly just SCSS and HTML. I wanted to gain experience making my own components and also wanted to keep the project relatively lightweight. If you'd like to see the code here is the [Github repo](https://github.com/tylerjlawson/portfolio-v1)
 
     - name: The PLPT
