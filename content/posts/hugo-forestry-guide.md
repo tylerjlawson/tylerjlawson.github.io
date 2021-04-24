@@ -2,7 +2,7 @@
 title = "Hugo With Forestry Setup Guide"
 description = "Full walkthrough for setting up Hugo static sites with Forestry, the free CMS."
 date = "2021-03-21"
-image = "/images/blog/hugo-forestry.jpg"
+image = "/images/posts/hugo-forestry.jpg"
 +++
 
 The easiest way I have found to setup a static site with a CMS has been to use [Forestry.io](https://forestry.io/), [Github](https://github.com), & [Hugo](https://gohugo.io/). This stack is free, easy to use, and efficient.

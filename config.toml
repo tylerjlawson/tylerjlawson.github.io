@@ -39,8 +39,8 @@ URL = "/#header"
 weight = 1
 
 [[menu.main]]
-name = "Blog"
-URL = "/blog"
+name = "Posts"
+URL = "/posts"
 weight = 2
 
 
