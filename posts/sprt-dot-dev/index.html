@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html><head>
   <meta charset="utf-8" />
-  <title>Posts</title>
+  <title>A Terminal Friendly Sport Schedule</title>
 
   <!-- mobile responsive meta -->
   <meta
@@ -10,7 +10,7 @@
   />
   <meta
     name="description"
-    content="Personal Portfolio"
+    content="The story of how I made sprt.dev"
   />
   
     <meta name="author" content="Tyler Lawson" />
@@ -87,7 +87,8 @@
   </div>
   <!-- preloader end -->
 
-<section class="menu menu-fix" id="menu">
+
+  <section class="menu menu-fix" id="menu">
   <nav>
     
     <div class="menu-container">
@@ -107,7 +108,7 @@
           </li>
         
           <li class="menu-item hvr-underline-from-left 2">
-            <a href="/blog">Blog</a>
+            <a href="/posts">Posts</a>
           </li>
         
       </ul>
@@ -137,7 +138,7 @@
                 </li>
               
                 <li class="mobile-menu-item 1 mx-auto">
-                  <a href="/blog">Blog</a>
+                  <a href="/posts">Posts</a>
                 </li>
               
             </ul>
@@ -168,38 +169,31 @@
     </div>
   </nav>
 </section>
-<div class="col-12 text-center blog under-menu">
-    <h1>Posts</h1>
-    <div class="posts mt-4">
-      
-        <a href="https://tyler-lawson.com/blog/sprt-dot-dev/">
-          <div
-            class="post col-lg-8 col-md-10 col-12 mx-auto text-left card d-flex flex-row"
-          >
-            <img src="/images/blog/sprt-1.png" alt="A Terminal Friendly Sport Schedule" />
-            <div class="content">
-              <h2>A Terminal Friendly Sport Schedule</h2>
-              <span>3/27/2021</span>
-              <p>The story of how I made sprt.dev</p>
-            </div>
-          </div>
-        </a>
-      
-        <a href="https://tyler-lawson.com/blog/hugo-forestry-guide/">
-          <div
-            class="post col-lg-8 col-md-10 col-12 mx-auto text-left card d-flex flex-row"
-          >
-            <img src="/images/blog/hugo-forestry.jpg" alt="Hugo With Forestry Setup Guide" />
-            <div class="content">
-              <h2>Hugo With Forestry Setup Guide</h2>
-              <span>3/21/2021</span>
-              <p>Full walkthrough for setting up Hugo static sites with Forestry, the free CMS.</p>
-            </div>
-          </div>
-        </a>
-      
+
+
+  <div class="under-menu col-lg-8 col-md-10 col-12 mx-auto post-container">
+    <h1>A Terminal Friendly Sport Schedule</h1>
+    <span class="date">Posted on: 3/27/2021</span>
+    <img src="/images/posts/sprt-1.png" alt="A Terminal Friendly Sport Schedule" />
+    <div class="body">
+      <p>A few years ago I found a site/service called <a href="https://wttr.in">wttr.in</a> that provides a terminal friendly weather report based on your location, or a location that you provide. For years, I had wanted to replicate this type of project for a simple view of the upcoming professional sports schedule, given a city. About a month ago I had a separate idea that I wanted to make an express app to play around with it after using it to make my team&rsquo;s technical interview test at work. Then after brainstorming ideas for express apps I remembered the sport schedule idea I had wanted to do years ago.</p>
+<h2 id="project-setup">Project Setup</h2>
+<p>I used <a href="https://expressjs.com/en/starter/generator.html">express-generator</a> to start an empty express API to start this project. I decided to use express and node when I noticed that there were many node libraries that would be helpful in creating my service for sport schedules. After setting up the empty project, I worked on setting up eslint and prettier. I run each of these using husky git hooks.</p>
+<p>After setting up the basic node project, I worked on getting the hello world app deployed to Heroku. Heroku is nice for this use case because they host node applications for free! On top of that, there is a very simple integration with Github that allows you to continuously deploy without needing to do much other than give Heroku permission to link with your Github account.</p>
+<h2 id="how-the-app-works">How the App Works</h2>
+<p>When selecting sports to show a user, we take the closest team for every sport that currently has scheduled games (is in season). When your closest team/city has multiple teams for a sport (e.g. LA Lakers &amp; LA Clippers), sprt.dev will show you both teams.</p>
+<p>By default if you <code>curl www.sprt.dev</code> it will attempt to collect your current location based off of your IP address as seen here (assuming the current location is LA):</p>
+<p><img src="/images/posts/sprt-2.png" alt="default curl www.sprt.dev result"></p>
+<p>When you provide a city like this image, the app will perform a google maps search for the location specified like this:</p>
+<p><img src="/images/posts/sprt-1.png" alt="curl www.sprt.dev/boston result"></p>
+<p>Eventually, I would like to add to the functionality of the app. I&rsquo;d be thrilled if others were to also start using the app and then make feature/functionality suggestions &amp; requests <a href="https://github.com/tylerjlawson/sprt.dev/issues">on Github</a>.</p>
+<h2 id="wrapping-up">Wrapping Up</h2>
+<p>I had a lot of fun getting myself more familiar with Express JS while. I also loved making something that I will use everyday in the future to check when my favorite teams play. If you appreciate sprt.dev or are just feeling nice, I&rsquo;d really appreciate a start <a href="https://github.com/tylerjlawson/sprt.dev">on my Github repo</a>. And if you ever watch sports, start <code>curl</code>ing <a href="https://sprt.dev">sprt.dev</a>!</p>
+
     </div>
-  </div><div class="footer container text-center" id="contact">
+  </div>
+
+  <div class="footer container text-center" id="contact">
   <ul class="footer-icons list-inline">
     
       <li>
@@ -226,6 +220,7 @@
     <span id="current-year"></span>
   </div>
 </div>
+
 <!-- JS Plugins -->
 
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>

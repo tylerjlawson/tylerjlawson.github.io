@@ -8,19 +8,19 @@
     <lastBuildDate>Sat, 27 Mar 2021 18:31:35 +0000</lastBuildDate><atom:link href="https://tyler-lawson.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A Terminal Friendly Sport Schedule</title>
-      <link>https://tyler-lawson.com/blog/sprt-dot-dev/</link>
+      <link>https://tyler-lawson.com/posts/sprt-dot-dev/</link>
       <pubDate>Sat, 27 Mar 2021 18:31:35 +0000</pubDate>
       
-      <guid>https://tyler-lawson.com/blog/sprt-dot-dev/</guid>
+      <guid>https://tyler-lawson.com/posts/sprt-dot-dev/</guid>
       <description>A few years ago I found a site/service called wttr.in that provides a terminal friendly weather report based on your location, or a location that you provide. For years, I had wanted to replicate this type of project for a simple view of the upcoming professional sports schedule, given a city. About a month ago I had a separate idea that I wanted to make an express app to play around with it after using it to make my team&amp;rsquo;s technical interview test at work.</description>
     </item>
     
     <item>
       <title>Hugo With Forestry Setup Guide</title>
-      <link>https://tyler-lawson.com/blog/hugo-forestry-guide/</link>
+      <link>https://tyler-lawson.com/posts/hugo-forestry-guide/</link>
       <pubDate>Sun, 21 Mar 2021 00:00:00 +0000</pubDate>
       
-      <guid>https://tyler-lawson.com/blog/hugo-forestry-guide/</guid>
+      <guid>https://tyler-lawson.com/posts/hugo-forestry-guide/</guid>
       <description>The easiest way I have found to setup a static site with a CMS has been to use Forestry.io, Github, &amp;amp; Hugo. This stack is free, easy to use, and efficient.
 You will new to install hugo for this demo.
 Step One: Create A Repo and Add Hugo TLDR If you want to skip some of the setup just fork my starter project and jump to step 4.
