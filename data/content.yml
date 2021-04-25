@@ -31,9 +31,14 @@ experience:
   enable: true
   title: 'EXPERIENCE'
   experience_list:
+    - name: Senior Software Engineer
+      company: Author By Humana
+      duration: '2021-Current'
+      content: As a Senior Engineer, my responsibilities have been slightly shifted to a higher level scope. I am still in the weeds with developing base components, but I am also spending time ideating our design system, planning a CMS integration, mentoring team members, and doing code reviews.
+
     - name: Software Engineer II
       company: Author By Humana
-      duration: '2020-Current'
+      duration: '2020-2021'
       content: I work with React and Typescript to create member and public facing web applications. My responsibilities include developing base-level components, assisting teammates, and communicating with the design/product teams.
 
     - name: Software Engineering Intern
