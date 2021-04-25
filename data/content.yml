@@ -93,7 +93,7 @@ portfolio:
     - name: sprt.dev
       image: 'images/portfolio/sprt.png'
       url: https://sprt.dev
-      description: This is a terminal friendly way to see the upcoming games for my favorite pro sports teams. I got this idea from [wttr.in](https://wttr.in), a terminal friendly service for viewing the weather. I loved having the weather quickly and easily, without ads, so I made myself a web app to replicate that experience for sports schedules. If you are curious to read the instructions for how to use sprt.dev or poke through the source code [click here](https://github.com/tylerjlawson/sprt.dev). If you'd like to read more in depth about how I made sprt.dev [go here](/blog/sprt-dot-dev).
+      description: This is a terminal friendly way to see the upcoming games for my favorite pro sports teams. I got this idea from [wttr.in](https://wttr.in), a terminal friendly service for viewing the weather. I loved having the weather quickly and easily, without ads, so I made myself a web app to replicate that experience for sports schedules. If you are curious to read the instructions for how to use sprt.dev or poke through [the source code](https://github.com/tylerjlawson/sprt.dev). If you'd like to read more in depth about how I made sprt.dev [go here](/blog/sprt-dot-dev).
 
     - name: Author by Humana
       image: 'images/portfolio/author.png'
