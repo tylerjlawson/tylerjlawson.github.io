@@ -179,10 +179,10 @@
 <p>After setting up the basic node project, I worked on getting the hello world app deployed to Heroku. Heroku is nice for this use case because they host node applications for free! On top of that, there is a very simple integration with Github that allows you to continuously deploy without needing to do much other than give Heroku permission to link with your Github account.</p>
 <h2 id="how-the-app-works">How the App Works</h2>
 <p>When selecting sports to show a user, we take the closest team for every sport that currently has scheduled games (is in season). When your closest team/city has multiple teams for a sport (e.g. LA Lakers &amp; LA Clippers), sprt.dev will show you both teams.</p>
-<p>By default if you <code>curl www.sprt.dev</code> it will attempt to collect your current location based off of your IP address as seen here (assuming the current location is LA):</p>
-<p><img src="/images/posts/sprt-2.png" alt="default curl www.sprt.dev result"></p>
+<p>By default if you <code>curl sprt.dev</code> it will attempt to collect your current location based off of your IP address as seen here (assuming the current location is LA):</p>
+<p><img src="/images/posts/sprt-2.png" alt="default curl sprt.dev result"></p>
 <p>When you provide a city like this image, the app will perform a google maps search for the location specified like this:</p>
-<p><img src="/images/posts/sprt-1.png" alt="curl www.sprt.dev/boston result"></p>
+<p><img src="/images/posts/sprt-1.png" alt="curl sprt.dev/boston result"></p>
 <p>Eventually, I would like to add to the functionality of the app. I&rsquo;d be thrilled if others were to also start using the app and then make feature/functionality suggestions &amp; requests <a href="https://github.com/tylerjlawson/sprt.dev/issues">on Github</a>.</p>
 <h2 id="wrapping-up">Wrapping Up</h2>
 <p>I had a lot of fun getting myself more familiar with Express JS while. I also loved making something that I will use everyday in the future to check when my favorite teams play. If you appreciate sprt.dev or are just feeling nice, I&rsquo;d really appreciate a start <a href="https://github.com/tylerjlawson/sprt.dev">on my Github repo</a>. And if you ever watch sports, start <code>curl</code>ing <a href="https://sprt.dev">sprt.dev</a>!</p>
