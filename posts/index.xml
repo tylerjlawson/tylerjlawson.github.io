@@ -5,7 +5,16 @@
     <link>https://tyler-lawson.com/posts/</link>
     <description>Recent content in Posts on Tyler Lawson</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 27 Mar 2021 18:31:35 +0000</lastBuildDate><atom:link href="https://tyler-lawson.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 13 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://tyler-lawson.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>First N Promises Resolved</title>
+      <link>https://tyler-lawson.com/posts/first-n-promises-resolved/</link>
+      <pubDate>Thu, 13 May 2021 00:00:00 +0000</pubDate>
+      
+      <guid>https://tyler-lawson.com/posts/first-n-promises-resolved/</guid>
+      <description>With Javascript at the moment, it is really easy to get the first 1 or l promises resolved in a list, where l is the length of the list. This is achieved with Promise.race and Promise.all respectively. When creating production applications Promise.allResolved is normally preferred since it will resolve even if one of the promises errors, but for the purposes of this post I will assume that all promises resolve successfully.</description>
+    </item>
+    
     <item>
       <title>A Terminal Friendly Sport Schedule</title>
       <link>https://tyler-lawson.com/posts/sprt-dot-dev/</link>
