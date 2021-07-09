@@ -1,6 +1,6 @@
 +++
 title = "First N Promises Resolved"
-description = "Examples for how to get the first n promises resolved from an array"
+description = "Examples for how to get the first n promises resolved from an array."
 date = "2021-05-13"
 image = "/images/posts/js-promise.jpg"
 +++
