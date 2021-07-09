@@ -5,7 +5,17 @@
     <link>https://tyler-lawson.com/posts/</link>
     <description>Recent content in Posts on Tyler Lawson</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 13 May 2021 00:00:00 +0000</lastBuildDate><atom:link href="https://tyler-lawson.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 08 Jul 2021 19:46:41 -0400</lastBuildDate><atom:link href="https://tyler-lawson.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>How To Auto Deploy a Hugo Theme Demo to Netlify</title>
+      <link>https://tyler-lawson.com/posts/deploy-hugo-theme-demo-guide/</link>
+      <pubDate>Thu, 08 Jul 2021 19:46:41 -0400</pubDate>
+      
+      <guid>https://tyler-lawson.com/posts/deploy-hugo-theme-demo-guide/</guid>
+      <description>When writing a theme for Hugo you&amp;rsquo;ll often want to show a demo from the exampleSite directory. In order to build that directory as a Hugo site, you need to have the theme inside of it. I wrote a small npm package, hugo-theme-demo-builder that will clone the theme into your exampleSite directory and then run the hugo build command.
+Step One: Install Package and Set Build Script The first thing to do would be to run the following from the root of your theme repo:</description>
+    </item>
+    
     <item>
       <title>First N Promises Resolved</title>
       <link>https://tyler-lawson.com/posts/first-n-promises-resolved/</link>

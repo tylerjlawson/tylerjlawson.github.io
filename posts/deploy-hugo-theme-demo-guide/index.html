@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en"><head>
   <meta charset="utf-8" />
-  <title>A Terminal Friendly Sport Schedule</title>
+  <title>How To Auto Deploy a Hugo Theme Demo to Netlify</title>
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta
     name="description"
-    content="The story of how I made sprt.dev"
+    content="The easy way to bring continuous deployment to your hugo theme demo."
   />
   
     <meta name="author" content="Tyler Lawson" />
@@ -167,23 +167,29 @@
 
 
   <div class="under-menu col-lg-8 col-md-10 col-12 mx-auto post-container">
-    <h1>A Terminal Friendly Sport Schedule</h1>
-    <span class="date">Posted on: 3/27/2021</span>
-    <img src="/images/posts/sprt-1.png" alt="A Terminal Friendly Sport Schedule" />
+    <h1>How To Auto Deploy a Hugo Theme Demo to Netlify</h1>
+    <span class="date">Posted on: 7/8/2021</span>
+    <img src="/images/posts/netlify-hugo.jpg" alt="How To Auto Deploy a Hugo Theme Demo to Netlify" />
     <div class="body">
-      <p>A few years ago I found a site/service called <a href="https://wttr.in">wttr.in</a> that provides a terminal friendly weather report based on your location, or a location that you provide. For years, I had wanted to replicate this type of project for a simple view of the upcoming professional sports schedule, given a city. About a month ago I had a separate idea that I wanted to make an express app to play around with it after using it to make my team&rsquo;s technical interview test at work. Then after brainstorming ideas for express apps I remembered the sport schedule idea I had wanted to do years ago.</p>
-<h2 id="project-setup">Project Setup</h2>
-<p>I used <a href="https://expressjs.com/en/starter/generator.html">express-generator</a> to start an empty express API to start this project. I decided to use express and node when I noticed that there were many node libraries that would be helpful in creating my service for sport schedules. After setting up the empty project, I worked on setting up eslint and prettier. I run each of these using husky git hooks.</p>
-<p>After setting up the basic node project, I worked on getting the hello world app deployed to Heroku. Heroku is nice for this use case because they host node applications for free! On top of that, there is a very simple integration with Github that allows you to continuously deploy without needing to do much other than give Heroku permission to link with your Github account.</p>
-<h2 id="how-the-app-works">How the App Works</h2>
-<p>When selecting sports to show a user, we take the closest team for every sport that currently has scheduled games (is in season). When your closest team/city has multiple teams for a sport (e.g. LA Lakers &amp; LA Clippers), sprt.dev will show you both teams.</p>
-<p>By default if you <code>curl sprt.dev</code> it will attempt to collect your current location based off of your IP address as seen here (assuming the current location is LA):</p>
-<p><img src="/images/posts/sprt-2.png" alt="default curl sprt.dev result"></p>
-<p>When you provide a city like this image, the app will perform a google maps search for the location specified like this:</p>
-<p><img src="/images/posts/sprt-1.png" alt="curl sprt.dev/boston result"></p>
-<p>Eventually, I would like to add to the functionality of the app. I&rsquo;d be thrilled if others were to also start using the app and then make feature/functionality suggestions &amp; requests <a href="https://github.com/tylerjlawson/sprt.dev/issues">on Github</a>.</p>
+      <p>When writing a theme for <a href="https://gohugo.io/">Hugo</a> you&rsquo;ll often want to show a demo from the <code>exampleSite</code> directory. In order to build that directory as a Hugo site, you need to have the theme inside of it. I wrote a small npm package, <a href="https://www.npmjs.com/package/hugo-theme-demo-builder">hugo-theme-demo-builder</a> that will clone the theme into your <code>exampleSite</code> directory and then run the <code>hugo</code> build command.</p>
+<h2 id="step-one-install-package-and-set-build-script">Step One: Install Package and Set Build Script</h2>
+<p>The first thing to do would be to run the following from the root of your theme repo:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">cd exampleSite
+yarn add hugo-theme-demo-builder
+npm set-script build hugo-theme-demo-builder
+</code></pre></div><p>This will add the build script to your <code>exampleSite</code>. Next, you will most likely want to set the hugo version in a <code>netlify.toml</code> file inside of the <code>exampleSite</code> directory to something like this:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml">[<span style="color:#a6e22e">context</span>.<span style="color:#a6e22e">production</span>.<span style="color:#a6e22e">environment</span>]
+  <span style="color:#a6e22e">HUGO_VERSION</span> = <span style="color:#e6db74">&#34;0.85.0&#34;</span>
+</code></pre></div><p>This will set the version used in netlify when we build the project there later. For more info about hosting Hugo on Netlify <a href="https://gohugo.io/hosting-and-deployment/hosting-on-netlify/">click here</a>.</p>
+<h2 id="step-two-create--configure-site-on-netlify">Step Two: Create &amp; Configure Site on Netlify</h2>
+<p>After creating your account on <a href="https://netlify.com">Netlify</a> navigate to the &lsquo;New Site from Git&rsquo; button.</p>
+<p><img src="/images/posts/new-site-from-git.png" alt="netlify new site from git button"></p>
+<p>Then select the source control you&rsquo;re using (e.g. Github). Then select the repo that your theme is in. Lastly you want to configure your build settings like this:</p>
+<p><img src="/images/posts/netlify-config.png" alt="netlify config"></p>
 <h2 id="wrapping-up">Wrapping Up</h2>
-<p>I had a lot of fun getting myself more familiar with Express JS while. I also loved making something that I will use everyday in the future to check when my favorite teams play. If you appreciate sprt.dev or are just feeling nice, I&rsquo;d really appreciate a start <a href="https://github.com/tylerjlawson/sprt.dev">on my Github repo</a>. And if you ever watch sports, start <code>curl</code>ing <a href="https://sprt.dev">sprt.dev</a>!</p>
+<p>The last step will be to copy the url to your deployed netlify site to your <code>theme.toml</code> like this:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-toml" data-lang="toml"><span style="color:#a6e22e">demourl</span> = <span style="color:#e6db74">&#34;https://example.netlify.app/&#34;</span>
+</code></pre></div><p>Now you should see a demo button that links to your automatically deployed theme demo on netlify from the theme page on <a href="https://themes.gohugo.io/">the hugo themes site</a>. You may need to wait until the next rebuild of the hugo themes site for your link to appear, but it should be there shortly.</p>
 
     </div>
   </div>
